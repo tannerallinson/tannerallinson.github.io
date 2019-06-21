@@ -1014,16 +1014,17 @@ Volunteer Experience
         </div>
         
        
-        <form name="contactform" method="post" action="send_form_email.php">
-<div >
-    <input  type="text" id="first_name" name="firstname" placeholder="Your Name.."style="color:blue">
+        <form action="http://formspree.io/you@email.com" method="post">
 
-    <input type="text" id="email" name="email" placeholder="Your Email..">
+<div >
+    <input  type="text" id="first_name" name="name" placeholder="Your Name.."style="color:blue">
+
+    <input  type="email" name="_replyto" id="email" placeholder="Your Email..">
     
       <center> 
     <textarea id="comments" name="comments" placeholder="Write something.." style="height:150px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Send">
       </center>
  
 </div>

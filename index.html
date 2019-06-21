@@ -27,7 +27,7 @@ h1 {
     top:0px;
     left:0px;
     opacity: 0;
-     
+    z-index: -1;
     -webkit-animation: intro 4s;
     animation: intro 4s;
 }
@@ -35,15 +35,17 @@ h1 {
     @keyframes intro {
   0% {
    opacity: 1;
+       z-index: 0;
   }
         80% {
              
      opacity: 1;
+             z-index: 0;
   }
  
   100% {
     opacity: 0;
-    
+     z-index: -1;
   }
 }
 
@@ -86,11 +88,11 @@ body {
     border:0;
     opacity: 1;
       
-    -webkit-animation: introNav 4s;
-    animation: introNav 4s;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
 }
     
-    @keyframes introNav {
+    @keyframes introAnimation {
   0% {
    opacity: 0;
   }
@@ -104,7 +106,7 @@ body {
   }
 }
 
-@-webkit-keyframes introNav {
+@-webkit-keyframes introAnimation {
     
   0% {
    opacity: 0;
@@ -169,38 +171,10 @@ body {
   transform: translateY(-50%);
    opacity: 1;
       
-    -webkit-animation: introNav 4s;
-    animation: introNav 4s;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
 }
-    
-    @keyframes introNav {
-  0% {
-   opacity: 0;
-  }
-        80% {
-     opacity: 0;
-  }
- 
-  100% {
-    opacity: 1;
-    
-  }
-}
-
-@-webkit-keyframes introNav {
-    
-  0% {
-   opacity: 0;
-  }
-        80% {
-     opacity: 0;
-  }
- 
-  100% {
-    opacity: 1;
-    
-  }
-}
+   
     
     
     
@@ -322,11 +296,12 @@ article {
     background-color: #537D85;
     border-radius: 5px;
     position: absolute;
-
     top: 1200px;
     height: 720px;
     width:100%;
     display: block;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
     }
     
     
@@ -340,7 +315,9 @@ article {
     color:#C7E3E8;
     font-size: 50px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
 }
     
     .JJLogo { 
@@ -350,6 +327,9 @@ article {
     border-radius: 30px;
     height: 75px;
     width:75px;
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
     }
     
      .JJName{ 
@@ -359,6 +339,9 @@ article {
     color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+     opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;    
     }
     
     .AngLogo { 
@@ -368,6 +351,9 @@ article {
     border-radius: 30px;
     height: 75px;
     width:75px;
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
     }
     
     .AngName{
@@ -377,6 +363,9 @@ article {
     color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
     }
     
     .GameLogo { 
@@ -386,16 +375,24 @@ article {
     border-radius: 30px;
     height: 75px;
     width:75px;
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;   
     }
     
-    .Game{
+    .GameName{
     position: absolute;
     left: 35%;
     top: 1600px;
     color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    }
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
+}
+    
+    
    
     
     
@@ -514,6 +511,9 @@ article {
     font-size: 40px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     top:4280px;
+    opacity: 1;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
     }
     
     
@@ -522,18 +522,23 @@ article {
     left:50%;
     top:4500px;
     font-size: 25px;
-     color:#2A7E8D;
-        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    color:#2A7E8D;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    opacity: 1;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
     }
     
     
     
     .email  { 
             
-      position: absolute;
+    position: absolute;
     right:55%;
     top:10%;
-         
+    opacity: 1;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s; 
         }
     
          
@@ -541,14 +546,18 @@ article {
      position: absolute;
     right:55%;
     top:55%;
-            
+     opacity: 1;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;       
            
         }
         
          
         
         form  { 
-         
+      opacity: 1;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;   
     display: block;
     position: absolute;
     right:50%;
@@ -921,14 +930,7 @@ footer {
         <div id="boarder"></div>
 
 
-        <div class="ProjectPanel" id="ProjectPanel"></div>
-        <h2 align="center" class="ProjectTitle" id="ProjectTitle">Projects</h2>
-        <input type="image" class="JJLogo" src="carrott%20logo.png">
-         <h2 class="JJName" id="JJName">Jax and Joel's Produce&nbsp;&nbsp;&nbsp;&nbsp;Status: (In Construction)</h2>
-        <input type="image" class="AngLogo" src="earthBite.jpg">
-          <h2 class="AngName" id="AngName">Girl Eats World&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status: (Next In Queqe)</h2>
-        <h2  class="Game" id="game">Game</h2>
-        <a  href = "game.html"><input type="image" class="GameLogo" src="balloon.png"></a>
+        
         
         <div class="AboutMePanel" id="AboutMePanel"></div>
         <h2 align="center" class="AboutMeTitle">About Me</h2>
@@ -1021,6 +1023,15 @@ Volunteer Experience
         
 <div id="cover"></div>
         
+        
+     <div class="ProjectPanel" id="ProjectPanel"></div>
+        <h2 align="center" class="ProjectTitle" id="ProjectTitle">Projects</h2>
+        <input type="image" class="JJLogo" src="carrott%20logo.png">
+         <h2 class="JJName" id="JJName">Jax and Joel's Produce&nbsp;&nbsp;&nbsp;&nbsp;Status: (In Construction)</h2>
+        <input type="image" class="AngLogo" src="earthBite.jpg">
+          <h2 class="AngName" id="AngName">Girl Eats World&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status: (Next In Queqe)</h2>
+        <h2  class="GameName" id="game">Game</h2>
+        <a  href="game.html" ><img alt="Index" class="GameLogo" src="balloon.png"/></a>   
         
        <div class="contactMeInfo"> 
          <div class="phone"><img src="phoneLogo.png" style="height:50px;"></div>

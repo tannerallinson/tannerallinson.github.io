@@ -12,12 +12,13 @@ canvas {
     position: absolute;
       top:0%;
     right: 50%;
-    width: 700px;
+    width: 50%;
+    height:75%;
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
 }
     #button{
-     right:50opx;
+    
     color:white;
     text-shadow: 2px 2px black;
     font-size: 15px;
@@ -296,9 +297,7 @@ function moveright() {
    <center><b1>
     <div style="text-align:center;width:480px;">
  
-  <button id="button" class= "button" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
-  <button id="button" class= "button" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
-  <button id="button" class= "button" onmousedown="movedown(-0.02)"  onmouseup="movedown(-0.02)">Ancor</button>
+
   <button id="button" class= "button" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Fly</button>
 </div>
 </b1></center>

@@ -17,21 +17,7 @@ canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
 }
-    #button{
-        position:absolute;
-    width: 50%;
-    height:100%;
-    color:white;
-    text-shadow: 2px 2px black;
-    font-size: 15px;
-    position: absolute;
-    top:80%;
-    left: 0%;
-        }
-       
-     
-      
-        
+   
     
      #reset{
      position: absolute;
@@ -50,10 +36,15 @@ canvas {
 }    
             
             .button {
-    top: 500px;
-               left:50%;
-    
-    border: 1px solid green
+    position:absolute;
+    width: 50%;
+    height:100%;
+    color:white;
+    text-shadow: 2px 2px black;
+    font-size: 15px;
+    position: absolute;
+    top:80%;
+    left: 0%;
 }
              
              .button {
@@ -298,7 +289,7 @@ function moveright() {
     
     <a href="index.html" id= "home" width="60" height="60">Home Page</a>
   
-    <div id="button“ onmouseup="accelerate(0.1)">Fly</div>
+    <div class="button“ onmouseup= "accelerate(0.1)" > Fly </div>
  
     <div id="reset"><a  href="game.html"  id="button" class= "button" ><span>Restart</span></a></div>
     

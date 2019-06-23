@@ -84,7 +84,7 @@ function startGame() {
     myBackground = new component(656, 270, "firebackground.jpg", 0, 0, "image");
     myObstacles.push(new component(99999, 70, "lava.png", 0, 200, "image"));
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("10px", "Consolas", "black", 25, 10, "text");
     
     myMusic = new sound("song.mp3");
     myMusic.play();
@@ -146,8 +146,7 @@ function component(width, height, color, x, y, type) {
     if (type == "image") {
     this.image = new Image();
     this.image.src = color;
-  }
-    this.score = 0;
+    }
     this.width = width;
     this.height = height;
     this.speedX = 0;
@@ -163,13 +162,19 @@ function component(width, height, color, x, y, type) {
         this.x, 
         this.y,
         this.width, this.height);
-       
+        }else if (this.type == "text") {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
+        
 
         } else {
             ctx.fillStyle = color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
         }
     }
+    
+    
     this.newPos = function() {
         this.gravitySpeed += this.gravity;
         this.x += this.speedX;
@@ -203,6 +208,8 @@ function component(width, height, color, x, y, type) {
    
     }
 }
+      
+
 
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
@@ -213,8 +220,6 @@ function updateGameArea() {
         } 
     }
     myGameArea.clear();
-    myBackground.newPos(); 
-    myBackground.update();
     myGameArea.frameNo += 1;
     if (myGameArea.frameNo == 1 || everyinterval(50)) {
         x = myGameArea.canvas.width;
@@ -263,6 +268,9 @@ function moveleft() {
 function moveright() {
     myGamePiece.speedX = 1; 
 }
+    
+    
+    
 </script>
     <a href="index.html" id= "home" width="60" height="60">Home Page</a>
 

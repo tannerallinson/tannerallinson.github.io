@@ -269,6 +269,9 @@ function moveright() {
     myGamePiece.speedX = 1; 
 }
     
+    function tapJump() {
+  myGamePiece.gravity = n;
+}
     
     
 </script>
@@ -278,7 +281,7 @@ function moveright() {
     
  
 <a id="reset" class= "button" href="game.html"  >Restart</a>
-<button id="button" class= "button" ontouchend="accelerate(0.05)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Up</button>
+<button id="button" class= "button" ontouchend="tapJump(0.05)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">UP</button>
 
 </b1>
     

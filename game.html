@@ -112,9 +112,10 @@ var mySound;
     
 function startGame() {
     x = myGameArea.canvas.width;
-    myGamePiece = new component(40, 50, "balloon.png", 0,0, "image");
+    myGamePiece = new component(40, 50, "balloon.png", 10,10, "image");
     myBackground = new component(500, 195, "firebackground.jpg", 0, 0, "image");
     myObstacles.push(new component(99999, 70, "lava.png", 0, 200, "image"));
+     myObstacles.push(new component(99999, 10, "lava.png", 0, -10, "image"));
     myGamePiece.gravity = 0.05;
     myScore = new component("20px", "Copperplate", "white", 25, 25, "text");
     mySound = new sound("pop.mp3");    
@@ -126,7 +127,7 @@ function startGame() {
    
 }
    
-       
+     
    
    
        
@@ -223,9 +224,7 @@ function component(width, height, color, x, y, type) {
             mySound.stop();
         }
         return crash;
-        myMusic.stop();
-            mySound.play();
-           myGamePiece = new component(40, 50, "popped.png", 0,0, "image");   
+        
    
        
                        
@@ -236,9 +235,18 @@ function component(width, height, color, x, y, type) {
 
 function updateGameArea() {
     var x,y, height, gap, minHeight, maxHeight, minGap, maxGap;
+    
+    
+      
+    
     for (i = 0; i < myObstacles.length; i += 1) {
+        
         if (myGamePiece.crashWith(myObstacles[i])) {
-           
+            
+          myMusic.stop();
+            mySound.play();
+            myGamePiece.image.src = "popped.png";
+             myGameArea.stop();
             return;
         }
         
@@ -248,6 +256,8 @@ function updateGameArea() {
     myBackground.newPos();
     myBackground.update();
     myGameArea.frameNo += 1;
+       
+
     if (myGameArea.frameNo == 1 || everyinterval(myGameArea.canvas.width/5)) {
         x = myGameArea.canvas.width;
         y= myGameArea.canvas.height;
@@ -297,10 +307,10 @@ function moveleft() {
 function moveright() {
     myGamePiece.speedX = 1;
 }
-   
-    function tapJump() {
-  myGamePiece.gravity = n;
-}
+    
+    
+
+
    
    
 </script>
@@ -310,7 +320,7 @@ function moveright() {
    
  
 <a id="reset" class= "button" href="game.html"  >Restart</a>
-<a id="button" class= "button" ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" >UP</a>
+<a id="button" class= "button"  ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" >UP</a>
 
 </b1>
    <img class="floor" src="lava.png" >

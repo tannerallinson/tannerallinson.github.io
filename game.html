@@ -13,7 +13,7 @@ canvas {
     top:0%;
     right: 0%;
     width: 100%;
-    height:85%;
+    height:100%;
     background-color: #f1f1f1;
 }
    
@@ -27,18 +27,24 @@ canvas {
    
    
     #button{
+        position: absolute;
         font-family: Copperplate, "Copperplate Gothic Light", fantasy;
         color:#2A7E8D;
-        font-size: 15px;
-        background-color: #C7E3E8;
+       height:100px;
+        width:100px;
+        background-color: #2A7E8D;
+        bottom:50%;
+        left:50%;
         }
    
      #reset{
+          position: absolute;
         text-decoration: none;
         font-family: Copperplate, "Copperplate Gothic Light", fantasy;
         color:#2A7E8D;
-        background-color: #C7E3E8;
-        font-size: 15px;
+         top:0px;
+        left:200px;
+         font-size: 24px;
         }
    
      #home {
@@ -46,14 +52,15 @@ canvas {
         position: absolute;
         left:0px;
         top: 0px;
+         font-size: 24px;
         font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-        color:#C7E3E8;
+        color:#2A7E8D;
 }    
            
 
              
     .button {
-  border-radius: 4px;
+  border-radius: 50px;
   text-align: center;
   padding: 20px;
   transition: all 0.5s;
@@ -69,7 +76,7 @@ canvas {
     
     .floor{
         position: absolute;
-        bottom: 10%;
+        bottom: 0%;
         height: 30%;
         width:100%;
         left: 0%;
@@ -112,18 +119,20 @@ var mySound;
     
 function startGame() {
     x = myGameArea.canvas.width;
-    myGamePiece = new component(40, 50, "balloon.png", 10,10, "image");
+    myGamePiece = new component(40, 50, "balloon.png", 25,75, "image");
     myBackground = new component(500, 195, "firebackground.jpg", 0, 0, "image");
     myObstacles.push(new component(99999, 70, "lava.png", 0, 200, "image"));
-     myObstacles.push(new component(99999, 10, "lava.png", 0, -10, "image"));
-    myGamePiece.gravity = 0.05;
+     myObstacles.push(new component(500, 50, "fire.png", 10, 0, "image"));
+    myGamePiece.gravity = 0.005;
     myScore = new component("20px", "Copperplate", "white", 25, 25, "text");
-    mySound = new sound("pop.mp3");    
+      
     myMusic = new sound("music.mp3");
  
-    myMusic.play();
-    myGameArea.start();
    
+    myGameArea.start();
+    
+   myMusic.play();
+           
    
 }
    
@@ -221,8 +230,9 @@ function component(width, height, color, x, y, type) {
         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
             crash = false;
            myMusic.play();
-            mySound.stop();
+            
         }
+        
         return crash;
         
    
@@ -234,23 +244,16 @@ function component(width, height, color, x, y, type) {
 
 
 function updateGameArea() {
-    var x,y, height, gap, minHeight, maxHeight, minGap, maxGap;
-    
-    
-      
-    
+    var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
-        
         if (myGamePiece.crashWith(myObstacles[i])) {
-            
-          myMusic.stop();
-            mySound.play();
-            myGamePiece.image.src = "popped.png";
-             myGameArea.stop();
+          
+            myMusic.stop();
+            myGameArea.stop();
             return;
-        }
-        
+        } 
     }
+    
      
     myGameArea.clear();
     myBackground.newPos();
@@ -258,7 +261,7 @@ function updateGameArea() {
     myGameArea.frameNo += 1;
        
 
-    if (myGameArea.frameNo == 1 || everyinterval(myGameArea.canvas.width/5)) {
+    if (myGameArea.frameNo == 1 || everyinterval(75)) {
         x = myGameArea.canvas.width;
         y= myGameArea.canvas.height;
         minHeight = 20;
@@ -268,7 +271,7 @@ function updateGameArea() {
         maxGap = myGameArea.canvas.width;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
        
-        myObstacles.push(new component(100, height, "toprocks.png", x, 0, "image"));
+        myObstacles.push(new component(200, height, "fire.png", x, 0, "image"));
        
     }
    
@@ -314,15 +317,15 @@ function moveright() {
    
    
 </script>
-    <a href="index.html" id= "home" width="60" height="60">Home Page</a>
-
-   <b1>
+    <a  id= "home" href="index.html" width="60" height="60">Home Page</a>
+    <a id="reset" width="60" height="60" href="game.html"  >Restart</a>
    
- 
-<a id="reset" class= "button" href="game.html"  >Restart</a>
-<a id="button" class= "button"  ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" >UP</a>
+   
 
-</b1>
+
+<a    ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" ><img alt="Index" class= "button" id="button"  src="up.png"/></a> 
+
+
    <img class="floor" src="lava.png" >
     <footer>Music: https://www.bensound.com</footer>
 </body>

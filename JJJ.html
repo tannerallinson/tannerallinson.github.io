@@ -30,8 +30,8 @@ text-transform: none;
    
     
    body {
-    background-color: #F1F9FA;
-    background-size: 100% auto;
+    background-image: url("background.png");
+    background-size: 100% 5000px;
     background-repeat: no-repeat;
     
 }
@@ -39,7 +39,7 @@ text-transform: none;
     
 #top{
     position: fixed;
-    background-color: #38AA29;
+    
     height:90px;
     width:100%;
     top:0px;
@@ -88,6 +88,7 @@ font-style: normal;
 font-variant: normal;
 text-transform: none;  display: none;
   position: absolute;
+    opacity: .7;
   background-color: #38AA29;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -95,21 +96,21 @@ text-transform: none;  display: none;
 }
 
 .dropdown-content a {
-  color: #000000;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   
 }
 
-.dropdown-content a:hover {background-color:#39AA29;}
+.dropdown-content a:hover {background-color:#39AA29; opacity: .4;}
 
 .dropdown:hover .dropdown-content {
     
       display: block;
     }
 
-.dropdown:hover .Nav {background-color: #39AA29;}
+.dropdown:hover .Nav {background-color: #39AA29; opacity: .3;}
    
 
     
@@ -120,17 +121,18 @@ text-transform: none;  display: none;
     
     
     .farmBackground{ 
-    background-image: url("FarmBackground.png");
-    position: absolute;
-    left:25%;
-    top: 150px;
-    height: 100%;
-    width:75%;
+    background-image: url("farm.png");
+    position: fixed;
+    left:0%;
+    top: 0px;
+    height: 42%;
+    width:100%;
     background-repeat: no-repeat;
+        opacity: .7;
     }
     
      .farmPanel{ 
-    background-color: #648234;
+    
     position: absolute;
     top: 90px;
     height: 1300px;
@@ -141,7 +143,7 @@ text-transform: none;  display: none;
     }
     
     .ProjectPanel{
-    background-color: #7A8234;
+    
     position: absolute;
     top: 1200px;
     height: 720px;
@@ -160,7 +162,7 @@ text-transform: none;  display: none;
     
     
      .AboutMePanel{
-    background-color: #827E34;
+    
     position: absolute;
     top: 1920px;
     height: 1000px;
@@ -184,7 +186,7 @@ text-transform: none;  display: none;
 font-size: 25px;
 letter-spacing: 2px;
 word-spacing: 2px;
-color: #000000;
+color: white;
 font-weight: normal;
 text-decoration: none;
 font-style: normal;
@@ -208,7 +210,7 @@ text-transform: none;
   
     
     .PricePanel{
-    background-color: #827034;
+    
    left: 0;
 	right: 0;
     position: absolute;
@@ -231,7 +233,7 @@ text-transform: none;
 font-size: 25px;
 letter-spacing: 2px;
 word-spacing: 2px;
-color: #000000;
+color: white;
 font-weight: normal;
 text-decoration: none;
 font-style: normal;
@@ -246,7 +248,7 @@ text-transform: none;
 .ContactMePanel{
         left: 0;
 	right: 0;
-    background-color: #826234;
+    
     
     position: absolute;
 
@@ -268,7 +270,7 @@ text-transform: none;
 font-size: 25px;
 letter-spacing: 2px;
 word-spacing: 2px;
-color: #000000;
+color: white;
 font-weight: normal;
 text-decoration: none;
 font-style: normal;
@@ -287,7 +289,7 @@ text-transform: none;
 font-size: 25px;
 letter-spacing: 2px;
 word-spacing: 2px;
-color: #000000;
+color: white;
 font-weight: normal;
 text-decoration: none;
 font-style: normal;
@@ -477,7 +479,7 @@ footer {
        
 
         <div class="farmPanel" id="farmPanel"></div>
-        <div class="farmBackground" id="farmBackground"></div>
+        
         
 
         <div class="AboutMePanel" id="AboutMePanel"></div>
@@ -527,7 +529,7 @@ footer {
     </form>
         
         
-        <div id="top"></div>
+        <div class="farmBackground" id="farmBackground"></div>
         
         <div id="Logo"><img src="carrot.png"  id="Logo" /> </div>
 

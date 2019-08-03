@@ -125,7 +125,7 @@ text-transform: none;  display: none;
     left:2.5%;
     top: 90px;
     height: 1300px;
-    width:100%;
+    width:1500px;
     background-repeat: no-repeat;
     }
     
@@ -207,7 +207,7 @@ text-transform: none;
 }
   
     
-    .resumePanel{
+    .PricePanel{
     background-color: #827034;
    left: 0;
 	right: 0;
@@ -218,7 +218,27 @@ text-transform: none;
     display: block;
     }
 
-    
+    .PriceTitle{
+    position: absolute;
+    top: 3000px;
+   left: 0;
+	right: 0;
+	/* center all inline content */
+	text-align: center;
+    color:#2A7E8D;
+    font-size: 50px;
+    font-family: Georgia, serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+    }
+
     
     
       
@@ -469,8 +489,8 @@ footer {
         <div class="ContactMePanel" id="ContactMePanel"></div>
         <h2 class="ContactMe">Contact me</h2>               
 
-        <div class="resumePanel" id="resumePanel"></div> 
-  
+        <div class="PricePanel" id="PricePanel"></div> 
+        <div class="PriceTitle" id="PriceTitle"> Prices</div> 
 
     
         
@@ -515,7 +535,7 @@ footer {
         <input type="image" class="Nav" src="nav.png" />
          <div class="dropdown-content">
             <a href="#AboutMePanel">About Us</a>
-            <a href="#resumePanel">Price</a>
+            <a href="#PricePanel">Price</a>
             <a href="#ProjectPanel">Projects</a>
             <a href="#ContactMePanel">Contact Us</a>
             </div>

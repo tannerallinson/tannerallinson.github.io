@@ -37,13 +37,14 @@ text-transform: none;
 }
 
     
-#top{
+.top{
+   
+    background-color: #83CDDB;
     position: fixed;
-    
-    height:90px;
-    width:100%;
-    top:0px;
-    left:0px;
+    left:0%;
+    top: 0px;
+    height: 155px;
+    width:2550px;
     }
     
     
@@ -51,8 +52,8 @@ text-transform: none;
 
     
 .Nav {
-    width:100px; 
-    height:90px ;
+    width:120px; 
+    height:120px ;
     border:0;
     opacity: 1;
     border-radius: 50px;
@@ -80,11 +81,12 @@ font-style: normal;
 font-variant: normal;
 text-transform: none;  display: none;
   position: absolute;
+    top: 40%;
     opacity: .7;
   background-color: #38AA29;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-border-radius: 5px;
+
 }
 
 .dropdown-content a {
@@ -95,14 +97,14 @@ border-radius: 5px;
   
 }
 
-.dropdown-content a:hover {background-color:#39AA29; opacity: .4;}
+.dropdown-content a:hover { background-color:#39AA29; opacity: .4;}
 
 .dropdown:hover .dropdown-content {
     
       display: block;
     }
 
-.dropdown:hover .Nav {background-color: #39AA29; opacity: .3;}
+.dropdown:hover .Nav { opacity: .1;}
    
 
     
@@ -120,7 +122,7 @@ border-radius: 5px;
     height: 180px;
     width:2550px;
     
-        opacity: .7;
+       
     }
     
      .farmPanel{ 
@@ -521,10 +523,12 @@ footer {
     </form>
         
         
+        
+        <div class="top" id="top"></div>
         <div class="farmBackground" id="farmBackground"></div>
-
+        
         <div class="dropdown">
-        <input type="image" class="Nav" src="carrot.png" />
+        <input type="image" class="Nav" src="carrot2.png" />
          <div class="dropdown-content">
             <a href="#AboutMePanel">About Us</a>
             <a href="#PricePanel">Price</a>

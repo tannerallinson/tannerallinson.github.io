@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+
+
+    
+
+
+
+    
+    
+        <style> 
+        h1 {
+   
+    color: white;
+    font-size: 50px;
+}
+     body {
+    background-image: url("pbackground.jpg");
+    background-color: #cccccc;
+   
+    background-repeat: repeat;
+}
+              #home {
+    position: absolute;
+    left:10px;
+    top: 10px;
+}
+    
+            article {
+    position: absolute;
+    top: 300px;
+    left: 15px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.0;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}             
+        article:hover {
+    opacity: 1;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+            
+}
+        
+    
+    
+    div {
+    font-size: 14px;
+        color: black;
+}
+    
+    
+div.img {
+    border: 1px solid #ccc;
+    text-shadow: 2px 2px white;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+   height: 300px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    
+}
+
+@media only screen and (max-width: 100px ){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      
+    }
+}
+
+@media only screen and (max-width: 100px){
+    .responsive {
+        width: 100%;
+       
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+            #button{
+     
+    color:white;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+        }
+            
+            
+            .button {
+    top: 500px;
+    flex: left;
+    border: 1px solid green
+}
+             
+             .button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+
+
+}
+            b1{
+     position: absolute;
+    top:100px;
+    right:600px;
+                
+        }
+           
+            b2{
+     position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 5px;
+                
+        }
+            
+            
+            
+            #a1{
+     position: absolute;
+    top:300px;
+    left:15px;
+        }
+             #a2{
+     position: absolute;
+    top:300px;
+    left:350px;
+                
+        }
+             #a3{
+     position: absolute;
+    top:300px;
+    left:680px;
+        }
+            #a4{
+     position: absolute;
+    top:300px;
+    left:1015px;
+        }
+            #a5{
+     position: absolute;
+    top:650px;
+    left:15px;
+    color:black;
+        }
+            #a6{
+     position: absolute;
+    top:650px;
+    left:350px;
+        }
+            #a7{
+     position: absolute;
+    top:650px;
+    left:680px;
+        }
+            #a8{
+     position: absolute;
+    top:650px;
+    left:1015px;
+        }
+            #a9{
+     position: absolute;
+    top:1030px;
+    left:20px;
+        }
+            #a10{
+     position: absolute;
+    top:1050px;
+    left:350px;
+        }
+            #a11{
+     position: absolute;
+    top:1050px;
+    left:680px;
+        }
+            #a12{
+     position: absolute;
+    top:1050px;
+    left:1015px;
+        }
+            
+         #footer { 
+    display: block;
+    position: absolute;
+    left:0px;
+    top: 2000px;
+    font-size: 15px;
+
+}
+             #map {
+    position: absolute;
+    left:400px;
+    top: 1500px;
+    width: 500px;
+    height: 400px;
+}
+                  #info {
+    position: absolute;
+    left:400px;
+    top: 1900px;
+    color:black;
+    font-size: 25px;
+    width: 500px;
+    height: 400px;
+}
+                        
+
+                  
+</style>
+<head>
+       <center><h1>Poisonous Plants And Trees</h1></center>
+    <a href="index.html">
+  <img id= "home" src="WebSiteLogo.PNG" width="60" height="60" border="0">
+</a>
+    </head>
+    
+<body>
+
+<b1>
+    <a  href="plant.html" id="button" class= "button" ><span>Update</span></a>
+    
+</b1>
+    <b2>
+   <a href="scan.html" id="button" class= "button"><span>Previous Work</span></a>  
+</b2>
+    
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+     <article id = "a1">
+     <p>The attractive seeds (usually about the size of a ladybug,</p>
+     <p>glossy red with one black dot)contain abrin,a contain </p>
+     <p>abrin, a ribosome-inactivating proteinrelated to ricin,</p>
+     <p>and very potent. Symptoms of poisoning include nausea,</p>
+     <p>vomiting, convulsions,liver failure, and death, usually</p>
+     <p>after severaldays. Ingesting a single seed can kill an</p>
+     <p>adult human. The seeds have been used as beads in  </p>
+     <p>Jewelry, which is dangerous; inhaled dust is toxic and </p>
+     <p>pinpricks can be fatal. The seeds are unfortunately </p>
+     <p>attractive to children.</p>
+     </article>
+    
+     <article id = "a2">
+     <p>All parts are poisonous. The poison is an alkaloid called</p>
+     <p>aconitine, which disables nerves, lowers blood pressure,</p> 
+     <p>and can stop the heart. Even casual skin contact should </p>
+     <p>be avoided;symptoms include numbness, tingling,and </p>
+     <p>cardiac irregularity.If ingested,it usually causes </p>
+     <p>burning, tingling, and numbness in the mouth,followed</p>
+     <p>by vomiting and nervous excitement. It is usually a  </p>
+     <p> quick-acting poison, and has been used in the past for</p>
+     <p>killing wolves (hence one of the common names).</p>
+     </article>
+    
+    <article id = "a3">
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     <p>All parts are poisonous, especially the berries, the</p>
+     <p>consumption of which has a sedative effect on cardiac</p>
+     <p>muscle tissue and can cause cardiac arrest.</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     </article>
+    
+    <article id = "a4">
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     <p>The plant exudes a highly toxic sap which is used by  </p>
+     <p>the Meridian High and Hadza in Tanzania to coat       </p>
+     <p>arrow-tips for hunting.                               </p>
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     </article>
+ 
+    <article id = "a5">
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     <p>All parts of the plant are poisonous, causing nausea,</p>
+     <p>muscle twitches, and sometimes paralysis.</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     </article>
+    
+    <article id = "a6">
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     <p>The juice of a number of species causes acute contact </p>
+     <p>dermatitis, with blistering lasting several weeks and </p> 
+     <p>recurring itching for several years thereafter.</p>
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     </article>
+    
+    <article id = "a7">
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     <p>All parts are poisonous, causing nausea and vomiting. </p>
+     <p>Often fatal. Milk from cattle that have eaten white </p> 
+     <p>snakeroot can sicken, or kill, humans (milk sickness). </p>
+     <p>                                                      .</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     <p>                                                      .</p>
+     </article>
+    
+    <article id = "a8">
+    
+     <p>                                                      .</p>
+     <p>Contains the saponins githagin and agrostemmic acid. </p>
+     <p>All parts of the plant are reported to be poisonous and </p> 
+     <p>may produce chronic or acute, potentially fatal  </p>
+     <p>poisoning,although it has been used in folk medicine to </p>
+     <p>treat a range of ills, from parasites to cancer. There</p>
+     <p> are no known recent clinical studies of corn cockle  </p>
+     <p>which provide a basis for dosage recommendations,   </p>
+     <p> however doses higherthan 3 g (of seeds) are </p>
+     <p> considered toxic </p>
+     
+     </article>
+    
+    <article id = "a9">
+     <p>Seeds and roots contain cardiogenic toxins which </p>
+     <p>cause both severe gastroenteritis and heart </p> 
+     <p>palpitations if consumed. The flowers of various  </p>
+     <p>species were consumed in moderation by Native </p>
+     <p>Americans reported to be very sweet, and safe if  </p>
+     <p>consumed in small quantities. Native Americans also </p>
+     <p>used very small amounts of the root as an effective </p>
+     <p>treatment for ulcers. However, medical use of this </p>
+     <p> plant is difficult due to its high toxicity; columbine </p>
+     <p>poisonings are easily fatal</p>
+     </article>
+    
+    <article id = "a10">
+     <p>                                                      .</p>
+     <p>The nut contains an alkaloid related to nicotine which </p>
+     <p>is addictive. It produces a mild high, some stimulation, </p> 
+     <p>and lots of red saliva, which cannot be swallowed as it </p>
+     <p>causes nausea. Withdrawal causes headache and sweats.  </p>
+     <p>Use is correlated with mouth cancer, and to a lesser  </p>
+     <p>extent asthma and heart disease.</p>
+     <p>                                                      .</p>
+     
+     </article>
+    
+    <article id = "a11">
+     <p>                                                      .</p>
+     <p>All parts of the plant can produce allergic reactions. </p>
+     <p>The bright red berries contain oxalates of saponins and </p>
+     <p>can cause skin, mouth and throat irritation, resulting </p> 
+     <p>in swelling, burning pain, breathing difficulties and </p>
+     <p>stomach upset. One of the most common causes of plant </p>
+     <p>poisoning.</p>
+     <p>                                                      .</p> 
+     <p>                                                      .</p>
+     
+     </article>
+    
+    <article id = "a12">
+     <p>Though asparagus plants cultivated for food are</p>
+     <p>typically harvested before they reach reproductive </p> 
+     <p>maturity, the berries of the mature plant are </p>
+     <p>poisonous, containing furostanol and spirostanol </p>
+     <p>saponins. Rapid ingestion of more than five to seven</p>
+     <p>ripe berries can induce abdominal pain and vomiting. </p> 
+     <p>Sulfur compounds in the young shoots are also </p>
+     <p>considered at least partially responsible for mild </p>
+     <p>skin reactions in some people who handle the plant<p> 
+     </article>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="abrus.jpg">
+      <img src="abrus.jpg" alt="abrus" width="200" height="100">
+    </a>
+    <div class="desc">Abrus precatorius (known commonly as jequirity, crab's eye, rosary pea, 'John Crow' bead)</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="monkshood.jpg">
+      <img src="monkshood.jpg" alt="monkshood" width="200" height="100">
+    </a>
+    <div class="desc">Aconitum genus (several species, commonly called aconite, wolfsbane and monkshood).</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Actaea.jpg">
+      <img src="Actaea.jpg" alt="Actaea" width="200" height="100">
+    </a>
+    <div class="desc">Actaea pachypoda (also known as doll's eyes or white baneberry)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="desertrose.JPG">
+      <img src="desertrose.JPG" alt="desertrose" width="200" height="100">
+    </a>
+    <div class="desc">Adenium obesum (also known as sabi star, kudu or desert-rose).</div>
+  </div>
+</div>
+     
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Aesculushippocastanum.jpg">
+      <img src="Aesculushippocastanum.jpg" alt="Trolltunga Norway" width="200" height="100">
+    </a>
+    <div class="desc">Aesculus hippocastanum (commonly known as horse-chestnut)</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Agave.jpg">
+      <img src="Agave.jpg" alt="Forest" width="200" height="100">
+    </a>
+    <div class="desc">Agave genus</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="snakeroot.JPG">
+      <img src="snakeroot.JPG" alt="Northern Lights" width="200" height="100">
+    </a>
+    <div class="desc">Ageratina altissima (commonly known as white snakeroot)</div>
+  </div>
+</div>
+    
+    
+    
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Agrostemmagithago.jpg">
+      <img src="Agrostemmagithago.jpg" alt="Mountains" width="200" height="100">
+    </a>
+    <div class="desc">Agrostemma githago (commonly known as corn cockle)</div>
+  </div>
+</div>
+    
+    <div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Aquilegiagenus.JPG">
+      <img src="Aquilegiagenus.JPG" alt="Mountains" width="200" height="100">
+    </a>
+    <div class="desc">Aquilegia genus (several species commonly known as columbine)</div>
+  </div>
+</div>
+    
+    <div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Arecacatechu.jpg">
+      <img src="Arecacatechu.jpg" alt="Mountains" width="200" height="100">
+    </a>
+    <div class="desc">Areca catechu (commonly known as betel nut palm and pinyang)</div>
+  </div>
+</div>
+    
+    <div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Arummaculatum.jpg">
+      <img src="Arummaculatum.jpg" alt="Mountains" width="200" height="100">
+    </a>
+    <div class="desc">Arum maculatum (commonly known as cuckoo-pint, lords and ladies,  wild arum, devils and angels, Adam and Eve).</div>
+  </div>
+</div>
+    
+    <div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Asparagusgenus.jpg">
+      <img src="Asparagusgenus.jpg" alt="Asparagus genus" width="200" height="100">
+    </a>
+    <div class="desc">(several species including Asparagus officinalis and Asparagus densiflorus)</div>
+  </div>
+</div>
+    <div class="clearfix"></div>
+<br>
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+         
+  
+    
+     
+
+
+</body>
+    
+  
+    <footer id="footer">@Copy rights 2016: Tanner Allinson</footer>
+</html>

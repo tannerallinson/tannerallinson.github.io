@@ -31,134 +31,8 @@
 }
           
             
-            
-           .cover{
-              position: fixed;
-   
-    height:100%;
-    width:100%;
-    top:0px;
-    left:0px;
      
-               
-            background-color: white;
-    -webkit-animation: Coverintro 1s;
-    animation: Coverintro 1s ;
-    animation-duration: 7s;
-        z-index: -1;
-         opacity: 0;
-             
-    
-}  
-            
-   @keyframes Coverintro {
-    0% {opacity: 1; z-index: 0;}
-    99% {opacity: 1; z-index: 0;}
-    100% {opacity: 0; z-index: -1; }
-}
-
-@-webkit-keyframes Coverintro {
-    
-     0% {opacity: 1; z-index: 0;}
-    99% {opacity: 1; z-index: 0;}
-    100% {opacity: 0; z-index: -1; }
-}
-      
-            
-            
-            .intro{
-        position: absolute;
-        top:25%;
-       right:45%;
-        opacity: 0;   
-    -webkit-animation: introNav 1s;
-    animation: introNav 1s;
-                z-index: -1;
-}
-            
-            
-            
-    .intro1{
-        position: absolute;
-        top:25%;
-        right:45%;
-        opacity: 0;   
-    -webkit-animation: introNav 2s;
-    animation: introNav 2s;
-        z-index: -1;
-}
-    
-   
-    
-   .intro2{
-       position: absolute;
-        top:25%;
-        right:45%;
-             opacity: 0;   
-    -webkit-animation: introNav 3s;
-    animation: introNav 3s;
-       z-index: -1;
-}
-            
-            
-    .intro3{
-        position: absolute;
-        top:25%;
-         right:45%;
-             opacity: 0;   
-    -webkit-animation: introNav 4s;
-    animation: introNav 4s;
-        z-index: -1;
-}
-    
-        
-            
-    .intro4{
-        position: absolute;
-        top:25%;
-         right:45%;
-              opacity: 0;  
-    -webkit-animation: introNav 5s;
-    animation: introNav 5s;
-        z-index: -1;
-}
-    
-            
-    .intro5{
-        position: absolute;
-        top:25%;
-         right:45%;
-               opacity: 0; 
-    -webkit-animation: introNav 6s;
-    animation: introNav 6s;
-        z-index: -1;
-}
-    
-            .intro6{
-                position: absolute;
-        top:25%;
-                 right:45%;
-                opacity: 0;
-    -webkit-animation: introNav 7s;
-    animation: introNav 7s;
-                z-index: -1;
-}
-    
-   
-   @keyframes introNav {
-    0% {opacity: 0; z-index: 0;}
-    99% {opacity: 1;}
-    100% {opacity: 0; z-index: 0;}
-}
-
-@-webkit-keyframes introNav {
-    
-   0% {opacity: 0; z-index: 0;}
-    99% {opacity: 1;}
-    100% {opacity: 0; z-index: 0;}
-}
-            
-            
+ 
             
             
     
@@ -298,7 +172,7 @@ div.desc {
 }
 
 input[type=text] {
-   width: 25%;
+  width: 25%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -351,7 +225,8 @@ input[type=text]:hover{
 
     </head>
 <center><input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search For A Recipe.." title="Type in a food"></center>
-
+    
+    
 <center><ul id="myUL">
        <li><a href="linkID1.html">Egg dish</a></li>
       <li><a href="linkID2.html">Pasta Squash</a></li>
@@ -369,7 +244,21 @@ input[type=text]:hover{
  
  
     </ul></center>
-
+    
+<br>
+<br>
+<br>
+<br>
+          
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="fp3.jpg">
+      <img src="fp3.jpg" alt="Steak Recipe" width="200" height="200" id="linkID3">
+    </a>
+    <div class="desc"><a>Steak Recipe</a></div>
+  </div>
+</div>
+        
 
     <div class="clearfix"></div>
    
@@ -386,15 +275,6 @@ input[type=text]:hover{
    
     
    
-    
-    <img src="earthBite%20(4).png" class="intro6"/>
-    <img src="earthBite%20(3).png" class="intro5"/>
-     <img src="earthBite%20(2).png" class="intro4"/>
-    <img src="earthBite%20(1).png" class="intro3"/>
-     <img src="earthBite.png" class="intro2"/>
-    <img src="earthBite%20(5).png" class="intro1"/>
-    <img src="earthBite%20(6).png" class="intro"/>
- 
 
 <script>
 function myFunction() {

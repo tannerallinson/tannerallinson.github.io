@@ -9,6 +9,7 @@
     
     
         <style> 
+             
             
        @font-face {
   font-family: 'MyWebFont';
@@ -26,11 +27,44 @@
 }
             
             
+            
+             .chalkBoard{ 
+                background-image: url(chalkboard.png);
+         background-repeat: no-repeat;
+         
+                
+            }
+            
+            
+            
+            
+         @font-face {
+	font-family: 'lovelyFont';
+	src: url('AngelineVintage-KY5l.ttf'); 
+	src: local('Lovely Font'),local('Lovely-Font'),url('AngelineVintage-KY5l.ttf') format('truetype');
+        }
+
+            
+        h2 {
+   letter-spacing: 10px;
+    color: whitesmoke;
+   position: absolute;
+     font-family: 'lovelyFont', Fallback, sans-serif;
+  font-size: 100px;
+ top:25%;
+
+            left:43%;
+            
+            
+}
+            
+            
      body {
      background-color: white;
+         
 }
           
-            
+          
             
            .cover{
               position: fixed;
@@ -350,9 +384,10 @@ input[type=text]:hover{
                   
 </style>
 <html>
-       
+        
     <head>
        <center><h1>Girl Eats World</h1></center>
+        
 
     </head>
 <center><input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search For A Recipe.." title="Type in a food"></center>
@@ -374,8 +409,10 @@ input[type=text]:hover{
  
  
     </ul></center>
-
-
+    <br>
+ 
+<center><img src="chalkboard.png" class="chalkBoard" height="1000px"></center>
+    <center><h2>Welcome</h2></center>
     <div class="clearfix"></div>
    
          
@@ -386,7 +423,7 @@ input[type=text]:hover{
     
      <div class="cover"></div>
 
-
+    
    
     
    
@@ -444,4 +481,5 @@ var p=new String(filter);
     
   
     <footer id="footer">@Copy rights 2019: Tanner Allinson</footer>
+   
 </html>

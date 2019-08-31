@@ -172,7 +172,7 @@ div.desc {
 }
 
 input[type=text] {
-  width: 25%;
+   width: 25%;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -187,10 +187,15 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:hover{
- border: 2px solid #ddd;
+input[type=text]:focus{
+
+ width:50%;
             }
 
+input[type=text]:hover{
+
+ border: 2px solid #ddd;
+            }
 #myUL {
   list-style-type: none;
   padding: 0;
@@ -208,13 +213,14 @@ input[type=text]:hover{
   font-size: 18px;
   color: black;
   display: block;
-    width: 25%;
+    width: 50%;
 }
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
     
 }        
+
 
                   
 </style>

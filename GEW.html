@@ -51,14 +51,21 @@
             
             .container {
   position: relative;
+                 left: 0;
+                right: 0;
+    margin-left: auto;
+  margin-right: auto;
+    width: 1200px;
+                text-align: center;
+                display: block;
 }
 
 .Welcome {
     
   position: absolute;
-  left: 0;
+ 
   width: 100%;
-  text-align: center;
+  
     color: whitesmoke;
   top: 50px;
      font-family: 'lovelyFont', Fallback, sans-serif;
@@ -70,14 +77,16 @@
                 background-image: url(chalkboard.png);
          background-repeat: no-repeat;
          
-                
+                display: block;
+  margin-left: auto;
+  margin-right: auto;
             
 }
             .chalkFood { 
 position: absolute;
-  left:37%;
+  display: block;
   top: 400px;
-               
+            left:100px;   
          
                 
             
@@ -305,7 +314,7 @@ div.desc {
 .icon-bar {
   position: absolute;
   top: 80%;
-  left: 35%;
+  left: 10%;
       
    
 }
@@ -361,9 +370,9 @@ div.desc {
          #footer { 
     display: block;
     position: absolute;
-    left:auto;
+    
     bottom: 0;
-             right:50%;
+            
     font-size: 15px;   
              color:whitesmoke;
         }
@@ -377,12 +386,12 @@ div.desc {
             .box{
                 position: absolute;
                     top:300px;
-                left:650px;
-                width: 50%;
+               left:400px;   
+                
             }
 input[type=text] {
     font-family: 'lovelyFont', Fallback, sans-serif;
-   width: 50%;
+   
 color:whitesmoke;
   box-sizing: border-box;
   border: 2px solid whitesmoke;
@@ -436,7 +445,7 @@ input[type=text]:hover{
   font-size: 18px;
   color: white;
   display: block;
-    width: 50%;
+   
      border-radius: 15px;
 }
 
@@ -451,8 +460,8 @@ input[type=text]:hover{
         
     
         <div class="container">
-  <center><img src="chalkboard.png" class="chalkBoard" height="75%"> </center>
-        <center><img src="chalkfood%20(1).png" class="chalkFood" height="700px"> </center>
+  <center><img src="chalkboard.png" class="chalkBoard" width="1200x" > </center>
+        <center><img src="chalkfood%20(1).png" class="chalkFood" > </center>
             <div class="Welcome">Girl Eats World</div>
             
             <div class="box">
@@ -493,19 +502,21 @@ input[type=text]:hover{
         </div>
     
      <div class="cover"></div>
-
-    
-   </div>
-    
-   
-    
-    <center><img src="earthBite%20(4).png" class="intro6"/></center>
+  
+     <center><img src="earthBite%20(4).png" class="intro6"/></center>
     <img src="earthBite%20(3).png" class="intro5"/>
      <img src="earthBite%20(2).png" class="intro4"/>
     <img src="earthBite%20(1).png" class="intro3"/>
      <img src="earthBite.png" class="intro2"/>
     <img src="earthBite%20(5).png" class="intro1"/>
     <img src="earthBite%20(6).png" class="intro"/>
+            
+            <footer id="footer">@Copy rights 2019: Tanner Allinson</footer>
+   </div>
+    
+   
+    
+   
  
 
 <script>
@@ -551,6 +562,6 @@ var p=new String(filter);
 </script>
     
   
-    <footer id="footer">@Copy rights 2019: Tanner Allinson</footer>
+  
    
 </html>

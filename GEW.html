@@ -28,12 +28,7 @@
             
             
             
-             .chalkBoard{ 
-                background-image: url(chalkboard.png);
-         background-repeat: no-repeat;
-         
-                
-            }
+             
             
             
             
@@ -45,18 +40,68 @@
         }
 
             
-        h2 {
-   letter-spacing: 10px;
+      
+          
+            
+            
+            
+            
+            
+            
+            
+            .container {
+  position: relative;
+}
+
+.Welcome {
+    
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
     color: whitesmoke;
-   position: absolute;
+  top: 50px;
      font-family: 'lovelyFont', Fallback, sans-serif;
   font-size: 100px;
- top:25%;
+}
 
-            left:1100px;
-            
+.chalkBoard { 
+
+                background-image: url(chalkboard.png);
+         background-repeat: no-repeat;
+         
+                
             
 }
+            .chalkFood { 
+position: absolute;
+  left:37%;
+  top: 400px;
+               
+         
+                
+            
+}
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
      body {
@@ -258,12 +303,9 @@ div.desc {
             
             
 .icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-   opacity: 1;
+  position: absolute;
+  top: 80%;
+  left: 35%;
       
    
 }
@@ -321,7 +363,9 @@ div.desc {
     position: absolute;
     left:auto;
     bottom: 0;
-    font-size: 15px;      
+             right:50%;
+    font-size: 15px;   
+             color:whitesmoke;
         }
 }
             
@@ -330,33 +374,51 @@ div.desc {
           * {
   box-sizing: border-box;
 }
-
+            .box{
+                position: absolute;
+                    top:300px;
+                left:650px;
+                width: 50%;
+            }
 input[type=text] {
-   width: 25%;
+    font-family: 'lovelyFont', Fallback, sans-serif;
+   width: 50%;
+color:whitesmoke;
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  font-size: 25px;
+  background-color: transparent;
   background-image: url('searchicon.png');
-    background-size: 20px, auto;
-  background-position: 10px 10px; 
+    background-size: 30px, auto;
+  background-position: 0px 25px; 
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  padding: 10px 20px 10px 40px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+    
+}
+::placeholder {
+  color: whitesmoke;
+  opacity: 1; /* Firefox */
 }
 
-input[type=text]:focus{
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: whitesmoke;
+}
 
- width:50%;
-            }
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: whitesmoke;
+}
+
+            
 
 input[type=text]:hover{
 
- border: 2px solid #ddd;
+ border: 2px solid darkgrey;
             }
 #myUL {
+    
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -364,16 +426,18 @@ input[type=text]:hover{
 }
 
 #myUL li a {
+     font-family: 'lovelyFont', Fallback, sans-serif;
   border: 1px solid #ddd;
   margin-top: -1px; /* Prevent double borders */
-  background-color: white;
+  background-color: black;
   padding: 12px;
   text-decoration: none;
     text-align: left;
   font-size: 18px;
-  color: black;
+  color: white;
   display: block;
     width: 50%;
+     border-radius: 15px;
 }
 
 #myUL li a:hover:not(.header) {
@@ -385,12 +449,14 @@ input[type=text]:hover{
 </style>
 <html>
         
-    <head>
-       <center><h1>Girl Eats World</h1></center>
-        
-
-    </head>
-<center><input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search For A Recipe.." title="Type in a food"></center>
+    
+        <div class="container">
+  <center><img src="chalkboard.png" class="chalkBoard" height="75%"> </center>
+        <center><img src="chalkfood%20(1).png" class="chalkFood" height="700px"> </center>
+            <div class="Welcome">Girl Eats World</div>
+            
+            <div class="box">
+            <center><input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search For A Recipe.." title="Type in a food"></center>
 
 <center><ul id="myUL">
        <li><a href="linkID1.html">Egg dish</a></li>
@@ -409,10 +475,15 @@ input[type=text]:hover{
  
  
     </ul></center>
-    <br>
+  
+</div>
+
+    
+
+   
+    
+    
  
-<center><img src="chalkboard.png" class="chalkBoard" height="1000px"></center>
-    <center><h2>Welcome</h2></center>
     <div class="clearfix"></div>
    
          
@@ -424,7 +495,7 @@ input[type=text]:hover{
      <div class="cover"></div>
 
     
-   
+   </div>
     
    
     

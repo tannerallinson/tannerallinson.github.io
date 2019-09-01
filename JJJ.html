@@ -7,30 +7,21 @@
 h1 {
      
     position: fixed;
-    left: 50%;
-    top: 150px;
-    transform: translate(-50%, -50%);
-    
    
-    
-    display: block;
-    font-family: Georgia, serif;
-font-size: 25px;
-letter-spacing: 2px;
-word-spacing: 2px;
+    top: 0%;
+
+      font-family: 'lovelyFont', Fallback, sans-serif;
+font-size: 80px;
+
 color: white;
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
+
 }
         
 
    
     
    body {
-    background-image: url("background.png");
+    background-color: #608038;
     background-size: 100% 5000px;
     background-repeat: no-repeat;
     
@@ -46,6 +37,8 @@ text-transform: none;
     height: 155px;
     width:2550px;
     }
+    
+    
     
     
     
@@ -108,7 +101,12 @@ text-transform: none;  display: none;
    
 
     
-    
+           
+         @font-face {
+	font-family: 'lovelyFont';
+	src: url('Nyk Jogja Gumregah.ttf'); 
+	src: local('Lovely Font'),local('Lovely-Font'),url('Nyk Jogja Gumregah.ttf') format('truetype');
+        }
     
     
        
@@ -125,59 +123,25 @@ text-transform: none;  display: none;
        
     }
     
-     .farmPanel{ 
-    
-    position: absolute;
-    top: 90px;
-    height: 1300px;
-    width:100%;
-    display: block;
-         left: 0;
-	right: 0;
-    }
-    
-    .ProjectPanel{
-    
-    position: absolute;
-    top: 1200px;
-    height: 720px;
-    width:100%;
-    display: block;
-    left: 0;
-	right: 0;
-    }
-    
    
-    
-    
    
     
     
     
     
-     .AboutMePanel{
-    
-    position: absolute;
-    top: 1920px;
-    height: 1000px;
-    width:100%;
-    display: block;
-         left: 0;
-	right: 0;
-    }
-    
+     
     
     .AboutMeTitle {
     position: absolute;
-	top: 1970px;
+	top: 1300px;
 	left: 0;
 	right: 0;
 	/* center all inline content */
 	text-align: center;
     color:#2A7E8D;
     font-size: 50px;
-    font-family: Georgia, serif;
-font-size: 25px;
+      font-family: 'lovelyFont', Fallback, sans-serif;
+font-size: 55px;
 letter-spacing: 2px;
 word-spacing: 2px;
 color: white;
@@ -191,10 +155,10 @@ text-transform: none;
     
     
     .aboutMe { 
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    
     position: absolute;
     right:45%;
-    top: 2220px;
+    top: 1220px;
     font-size: 16px;
     color: #2A7E8D;
     width: 500px;
@@ -203,65 +167,22 @@ text-transform: none;
 }
   
     
-    .PricePanel{
-    
-   left: 0;
-	right: 0;
-    position: absolute;
-    top: 2920px;
-    height: 1300px;
-    width:100%;
-    display: block;
-    }
-
-    .PriceTitle{
-    position: absolute;
-    top: 3000px;
-   left: 0;
-	right: 0;
-	/* center all inline content */
-	text-align: center;
-    color:#2A7E8D;
-    font-size: 50px;
-    font-family: Georgia, serif;
-font-size: 25px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: white;
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-    }
-
     
     
       
     
-.ContactMePanel{
-        left: 0;
-	right: 0;
-    
-    
-    position: absolute;
 
-    top: 4220px;
-    height: 800px;
-    width:100%;
-    display: block;
-    }
-    
 .ContactMe{
     position: absolute;
     left: 0;
     right: 0;
-     top:4280px;
+   top: 500px;
     /* center all inline content */
     text-align: center;
-    
-    font-size: 40px;font-family: Georgia, serif;
-font-size: 25px;
+      font-family: 'lovelyFont', Fallback, sans-serif;
+    font-size: 50px;
+
+  font-family: 'lovelyFont', Fallback, sans-serif;
 letter-spacing: 2px;
 word-spacing: 2px;
 color: white;
@@ -277,18 +198,14 @@ text-transform: none;
     
 .contactMeInfo{
     position: absolute;
-    left:50%;
-    top:4500px;
-    font-size: 40px;font-family: Georgia, serif;
+    left:55%;
+    top:700px;
+    font-size: 40px;
+      font-family: 'lovelyFont', Fallback, sans-serif;
 font-size: 25px;
-letter-spacing: 2px;
-word-spacing: 2px;
+
 color: white;
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
+
     }
     
     
@@ -296,7 +213,7 @@ text-transform: none;
     .email  { 
             
     position: absolute;
-    right:65%;
+     right:100%;
     top:10%;
     opacity: 1;
    
@@ -306,7 +223,7 @@ text-transform: none;
          
         .phone { 
      position: absolute;
-    right:65%;
+    right:100%;
     top:55%;
      opacity: 1;  
         }
@@ -326,7 +243,7 @@ text-transform: none;
     display: block;
     position: absolute;
     right:50%;
- top:4470px;
+ top:670px;
     
         }
 
@@ -342,7 +259,7 @@ text-transform: none;
     padding: 12px 20px;
     background-color: #7BEC9B;
     color: #38AA29;
-    font-family: Georgia, serif;
+    font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
     font-weight: normal;
@@ -359,7 +276,7 @@ text-transform: none;
     border: 1px solid #ccc;
     background-color: #7BEC9B;
     color: #38AA29;
-    font-family: Georgia, serif;
+   font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
     font-weight: normal;
@@ -376,7 +293,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: Georgia, serif;
+   font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
     font-weight: normal;
@@ -388,7 +305,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #38AA29;
-    font-family: Georgia, serif;
+    font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
     font-weight: normal;
@@ -407,7 +324,7 @@ input[type=submit]:hover {
     ::placeholder {
     color: #38AA29;
     opacity: 1; /* Firefox */
-    font-family: Georgia, serif;
+    font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
     font-weight: normal;
@@ -477,16 +394,15 @@ footer {
         
 
         <div class="AboutMePanel" id="AboutMePanel"></div>
-        <h2 align="center" class="AboutMeTitle">About Me</h2>
+        <h2 align="center" class="AboutMeTitle">About Us</h2>
        
         <div class="aboutMe"></div>
 
 
         <div class="ContactMePanel" id="ContactMePanel"></div>
-        <h2 class="ContactMe">Contact me</h2>               
+        <h2 class="ContactMe">Contact Us</h2>               
 
-        <div class="PricePanel" id="PricePanel"></div> 
-        <div class="PriceTitle" id="PriceTitle"> Prices</div> 
+    
 
     
         
@@ -500,9 +416,9 @@ footer {
         <div class="phone"><img src="JphoneLogo.png" style="height:50px;"></div>
         <div class="email"><img class="email" src="JemailLogo.png" style="height:50px;"></div>
         <div class="facebook" href="https://www.facebook.com/tanner.allinson"><img class="facebook" src="Jfacebook.png" style="height:57px;"></div>
-<pre>         JJJ@hotmail.ca
-           
-         (705)-555-5555</pre>
+           <p>JJJ@hotmail.ca</p>
+           <p>(705)-555-5555</p>
+         
         </div>
         
        
@@ -531,8 +447,6 @@ footer {
         <input type="image" class="Nav" src="carrot2.png" />
          <div class="dropdown-content">
             <a href="#AboutMePanel">About Us</a>
-            <a href="#PricePanel">Price</a>
-            <a href="#ProjectPanel">Projects</a>
             <a href="#ContactMePanel">Contact Us</a>
             </div>
         </div>

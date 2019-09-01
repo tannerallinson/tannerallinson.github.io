@@ -384,6 +384,69 @@ div.desc {
             }
 
 
+input[type=text] {
+    font-family: 'lovelyFont', Fallback, sans-serif;
+   width: 420px;
+    height: 120px;
+color:whitesmoke;
+  box-sizing: border-box;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  font-size: 40px;
+  background-color: transparent;
+  background-image: url('searchicon.png');
+    background-size: 30px, auto;
+  background-position: 0px 40px; 
+  background-repeat: no-repeat;
+  padding: 10px 20px 10px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+    
+}
+::placeholder {
+  color: whitesmoke;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: whitesmoke;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: whitesmoke;
+}
+
+            
+
+input[type=text]:hover{
+
+ border: 2px solid darkgrey;
+            }
+#myUL {
+    
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ display:none;
+       z-index: 1;
+}
+
+#myUL li a {
+     font-family: 'lovelyFont', Fallback, sans-serif;
+  border: 1px solid #373741;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: black;
+  padding: 12px;
+  text-decoration: none;
+    text-align: left;
+  font-size: 40px;
+  color: white;
+  display: block;
+   z-index: 1;
+     border-radius: 5px;
+     height: 120px;
+}
+
 #myUL li a:hover:not(.header) {
   background-color: #373741;
     

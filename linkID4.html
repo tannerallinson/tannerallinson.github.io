@@ -108,10 +108,7 @@ div.img {
     text-shadow: 2px 2px white;
 }
 
-div.img:hover {
-    border: 1px solid #777;
-    opacity: .7;
-}
+
 
 div.img img {
     width: 100%;
@@ -136,7 +133,7 @@ div.desc {
     margin-left: auto;
   margin-right: auto;
     width: 500px;
-   
+   z-index: 0;
     
 }
 
@@ -248,24 +245,25 @@ div.desc {
           * {
   box-sizing: border-box;
 }
-            .box{
+                        .box{
                 position: absolute;
-                    top:300px;
-               left:450px;   
+                    top:350px;
+               left:400px;   
                 
             }
 input[type=text] {
     font-family: 'lovelyFont', Fallback, sans-serif;
-   
+   width: 400px;
+    height: 140px;
 color:whitesmoke;
   box-sizing: border-box;
   border: 2px solid whitesmoke;
   border-radius: 15px;
-  font-size: 25px;
+  font-size: 40px;
   background-color: transparent;
   background-image: url('searchicon.png');
     background-size: 30px, auto;
-  background-position: 0px 25px; 
+  background-position: 0px 45px; 
   background-repeat: no-repeat;
   padding: 10px 20px 10px 40px;
   -webkit-transition: width 0.4s ease-in-out;
@@ -297,28 +295,28 @@ input[type=text]:hover{
   padding: 0;
   margin: 0;
  display:none;
+       z-index: 1;
 }
 
 #myUL li a {
      font-family: 'lovelyFont', Fallback, sans-serif;
-  border: 1px solid #ddd;
+  border: 1px solid #373741;
   margin-top: -1px; /* Prevent double borders */
   background-color: black;
   padding: 12px;
   text-decoration: none;
     text-align: left;
-  font-size: 18px;
+  font-size: 40px;
   color: white;
   display: block;
-   
-     border-radius: 15px;
+   z-index: 1;
+     border-radius: 5px;
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #eee;
+  background-color: #373741;
     
-}        
-
+} 
                   
 </style>
 <html>
@@ -329,32 +327,10 @@ input[type=text]:hover{
        
             <div class="Welcome">Girl Eats World</div>
             
-            <div class="box">
-            <center><input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search For A Recipe.." title="Type in a food"></center>
-
-<center><ul id="myUL">
-       <li><a href="linkID1.html">Egg dish</a></li>
-      <li><a href="linkID2.html">Pasta Squash</a></li>
-        <li><a href="linkID3.html">The Perfect Steak</a></li>
-      <li><a href="linkID4.html">Honey Garlic Salmon</a></li>
-      <li><a href="linkID5.html">Hash Browns</a></li>
-      <li><a href="linkID6.html">Shrim Stirfry</a></li>
-      <li><a href="linkID7.html">Tomato Bruschetta</a></li>
-      <li><a href="linkID8.html">Garlic shrimp</a></li>
-      <li><a href="linkID9.html">Pizza</a></li>
-    <li><a href="linkID10.html">Chocolate Rice Crispies</a></li>
-      <li><a href="linkID11.html">Cookies</a></li>
-      <li><a href="linkID12.html">Butter Cream Cake</a></li>
- 
- 
- 
-    </ul></center>
-  
-</div>
 <div class="responsive">
   <div class="img">
     <a target="_blank" href="fp4.jpg">
-      <img src="fp4.jpg" alt="Egg Recipe" width="200" height="200" id="linkID2">
+      <img src="fp4.jpg" alt="Egg Recipe" width="200" height="200" id="linkID4">
     </a>
     <div class="desc"><pre>Recipe
     
@@ -414,9 +390,33 @@ Serve warm or chilled. Serves 3 to 6.</pre></div>
         
 
     <div class="clearfix"></div>
+            <div class="box">
+            <center><input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search For A Recipe.." title="Type in a food"></center>
+
+<center><ul id="myUL">
+       <li><a href="linkID1.html">Egg dish</a></li>
+      <li><a href="linkID2.html">Pasta Squash</a></li>
+        <li><a href="linkID3.html">The Perfect Steak</a></li>
+      <li><a href="linkID4.html">Honey Garlic Salmon</a></li>
+      <li><a href="linkID5.html">Hash Browns</a></li>
+      <li><a href="linkID6.html">Shrim Stirfry</a></li>
+      <li><a href="linkID7.html">Tomato Bruschetta</a></li>
+      <li><a href="linkID8.html">Garlic shrimp</a></li>
+      <li><a href="linkID9.html">Pizza</a></li>
+    <li><a href="linkID10.html">Chocolate Rice Crispies</a></li>
+      <li><a href="linkID11.html">Cookies</a></li>
+      <li><a href="linkID12.html">Butter Cream Cake</a></li>
+ 
+ 
+ 
+    </ul></center>
+  
+
    
          
-  <div class="icon-bar">
+  
+                </div>
+            <div class="icon-bar">
             
             <a href="https://www.instagram.com/girleatsworld/?hl=en" ><img src="GreyInstagrm.png" alt="Index" class="instagram"/></a> 
       

@@ -13,7 +13,7 @@ left: 70px;
       font-family: 'lovelyFont', Fallback, sans-serif;
 font-size: 70px;
 
-color: white;
+color: #9DDD97;
 
 }
         
@@ -21,7 +21,7 @@ color: white;
    
     
    body {
-    background-color: #608038;
+    background-color: #D6FFD2;
     background-size: 100% 3000px;
     background-repeat: no-repeat;
     
@@ -84,7 +84,7 @@ text-transform: none;  display: none;
     
 
     opacity: .7;
-  background-color: #38AA29;
+  background-color: #9DDD97;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
@@ -118,7 +118,12 @@ text-transform: none;  display: none;
         }
     
     
-       
+           
+         @font-face {
+	font-family: 'simple';
+	src: url('SIMPLIFICA Typeface.woff'); 
+	src: local('woff'),local('simple'),url(SIMPLIFICA Typeface.woff') format('woff');
+        }
     
     
     .farmBackground{ 
@@ -147,13 +152,13 @@ text-transform: none;  display: none;
 	right: 0;
 	/* center all inline content */
 	text-align: center;
-    color:#2A7E8D;
+    color:#9DDD97;
    
       font-family: 'lovelyFont', Fallback, sans-serif;
 font-size: 100px;
 letter-spacing: 2px;
 word-spacing: 2px;
-color: white;
+
 font-weight: normal;
 text-decoration: none;
 font-style: normal;
@@ -170,7 +175,7 @@ text-transform: none;
     display: block;
   margin-left: auto;
   margin-right: auto;
- width:40%;
+ width:50%;
 
    
   
@@ -192,8 +197,10 @@ text-transform: none;
 }
     }
     
-    .aboutUsInfo { 
+    
+     .aboutUsInfo { 
    
+      font-family: 'simple', Fallback, sans-serif;
     position: absolute;
    text-align: center;
         margin-left: 200px;
@@ -201,9 +208,21 @@ text-transform: none;
        max-height: 500px;
     font-size: 40px;
     top: 500px;
-    font-family: 'lovelyFont', Fallback, sans-serif;
+    color: #9DDD97;
          max-height: 100px;
 }
+    
+    
+      @media only screen and (min-width: 2000px) {
+          .aboutUsInfo{
+               margin-left: 500px;
+  margin-right: 500px;
+              
+              
+          }
+          }
+          
+   
   
     
     .center{
@@ -226,7 +245,7 @@ text-transform: none;
     font-size: 100px;
   font-family: 'lovelyFont', Fallback, sans-serif;
 
-color: white;
+color: #9DDD97;
 
    
     
@@ -243,7 +262,7 @@ color: white;
       font-family: Georgia, serif;
 font-size: 25px;
 
-color: white;
+color: #9DDD97;
 
     }
     
@@ -293,8 +312,8 @@ color: white;
     margin-bottom: 6px;
     resize: vertical;
     padding: 12px 12px;
-    background-color: #7BEC9B;
-    color: #38AA29;
+    background-color: transparent;
+    color: #9DDD97;
     font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -311,8 +330,8 @@ color: white;
     margin: 8px 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    background-color: #7BEC9B;
-    color: #38AA29;
+    background-color: transparent;
+   color: #9DDD97;
    font-family: 'lovelyFont', Fallback, sans-serif;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -325,7 +344,7 @@ color: white;
     }
 
 input[type=submit] {
-    background-color: #38AA29;
+    background-color: #9DDD97;
     color: white;
     padding: 15px 30px;
     border: none;

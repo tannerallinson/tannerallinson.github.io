@@ -21,7 +21,7 @@ color: #9DDD97;
    
     
    body {
-    background-color: #D6FFD2;
+    background-color: #EEFFEC;
     background-size: 100% 3000px;
     background-repeat: no-repeat;
     
@@ -269,8 +269,7 @@ color: #9DDD97;
     
     
     .email  { 
-            
-   
+       
     top:0px;
     opacity: 1;
    
@@ -429,6 +428,78 @@ footer {
     font-size: 15px;      
         }
     
+    
+    
+    
+    
+    
+    
+    body {
+  font-family: Arial;
+  margin: 0;
+        
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+    height: 500px;
+    width: 250px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background-color: transparent;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    
+    
+    
+    
+    
+    
+    
+    
  
 </style>  
   
@@ -443,8 +514,6 @@ footer {
 
 <html> 
     
-    <body>
-
 
        
 
@@ -456,7 +525,85 @@ footer {
         <h2 align="center" class="AboutMeTitle" id="AboutMeTitle">About Us</h2>
        <div class="aboutUsInfo"> <p><b>Welcome to Team Jax And Jones Produce. We sell local, naturally grown produce and preserves in Goulais River, Ontario, Canada.
 rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local growers</b></p>
-        <div class="aboutMe"><img src="us.png" alt="Paris" style="width:100%;"></div></div>
+        
+<div class="container">
+  <div class="mySlides">
+    <img src="couple.jpg" style="width:25%">
+  </div>
+
+  <div class="mySlides">
+    <img src="garlic.jpg" style="width:25%">
+  </div>
+
+  <div class="mySlides">
+    <img src="leafs.jpg" style="width:25%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="couple2.jpg" style="width:25%">
+  </div>
+
+  <div class="mySlides">
+    <img src="lettuce.jpg" style="width:25%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="couple3.jpg" style="width:25%">
+  </div>
+<br>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="couple.jpg" style="width:100px; height:100px;"  onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="garlic.jpg" style="width:100px; height:100px;" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="leafs.jpg" style="width:100px; height:100px;" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="couple2.jpg" style="width:100px; height:100px;" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lettuce.jpg" style="width:100px; height:100px;" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="couple3.jpg" style="width:100px; height:100px;" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script></div>
            
            
         
@@ -478,7 +625,7 @@ rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local gr
       
        <div class="contactMeInfo"> 
            <div class="center">
-        <div class="phone"><img src="JphoneLogo.png" style="height:60px;"> <p>(705)-992-5635</p></div>
+        <div class="phone"><img src="JphoneLogo.png" style="height:65px;"> <p>(705)-992-5635</p></div>
         <div class="email"><img class="email" src="JemailLogo.png" style="height:60px;"><p>jjj@hotmail.ca </p></div>
         <div class="location" ><img class="location" src="location.png" style="height:60px;"><p>149 Pickard Rd <p>Goulais River, ON, Canada</p></div>
                                                                                                 
@@ -532,11 +679,18 @@ rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local gr
         
 
 
-    </body>
+    
     
     
     
     <footer>Designed By: Tanner Allinson 2019</footer>
+        
+        <body>
+
+
+
+    
+</body>
     
 </html>
 

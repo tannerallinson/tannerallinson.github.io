@@ -9,9 +9,9 @@ h1 {
     position: fixed;
    
     top:0px;
-left: 10px;
+left: 70px;
       font-family: 'lovelyFont', Fallback, sans-serif;
-font-size: 80px;
+font-size: 70px;
 
 color: white;
 
@@ -45,16 +45,15 @@ color: white;
         top:120px;
         left:0px;
         width: 800px;
-        height:120px;
+        height:100px;
     }
     
     
 
     
 .Nav {
-    width:120px; 
-    height:120px ;
-    border:0;
+    width:25%; 
+   
     opacity: 1;
     border-radius: 50px;
     
@@ -64,8 +63,8 @@ color: white;
 .dropdown {
  
   
-   
-   float: right;
+    
+   float: left;
   
   display: block;
 }
@@ -81,7 +80,8 @@ text-decoration: none;
 font-style: normal;
 font-variant: normal;
 text-transform: none;  display: none;
-  
+    
+
     opacity: .7;
   background-color: #38AA29;
   min-width: 160px;
@@ -100,11 +100,12 @@ text-transform: none;  display: none;
 .dropdown-content a:hover { background-color:#39AA29; opacity: .4;}
 
 .dropdown:hover .dropdown-content {
-    
+    position: fixed;
+    top:175px;
       display: block;
     }
 
-.dropdown:hover .Nav { opacity: .1;}
+.dropdown:hover .Nav { opacity: 0;   }
    
 
     
@@ -418,7 +419,7 @@ footer {
         
 
       
-        <h2 align="center" class="AboutMeTitle">About Us</h2>
+        <h2 align="center" class="AboutMeTitle" id="AboutMeTitle">About Us</h2>
        <div class="aboutUsInfo"> <p><b>Welcome to Team Jax And Jones Produce. We sell local, naturally grown produce and preserves in Goulais River, Ontario, Canada.
 rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local growers</b></p>
         <div class="aboutMe"><img src="us.png" alt="Paris" style="width:100%;"></div></div>
@@ -429,7 +430,7 @@ rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local gr
 
 
         <div class="ContactMePanel" id="ContactMePanel"></div>
-        <h2 class="ContactMe">Contact Us</h2>               
+        <h2 class="ContactMe" id="ContactMe">Contact Us</h2>               
 
     
 
@@ -489,8 +490,8 @@ rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local gr
         <div class="dropdown">
         <input type="image" class="Nav" src="carrot2.png" />
          <div class="dropdown-content">
-            <a href="#AboutMePanel">About Us</a>
-            <a href="#ContactMePanel">Contact Us</a>
+            <a href="#AboutMeTitle">About Us</a>
+            <a href="#ContactMe">Contact Us</a>
             </div>
         </div>
 

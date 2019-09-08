@@ -161,20 +161,19 @@ text-transform: none;
     
 }
     
-    @media only screen and (max-width: 600px) {
+   
  .aboutMe { 
     
     
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
-     height:  880px;
+ width: 200%;
 
    
   
 }
-}
+
    
     
       @media only screen and (max-width: 3200px) {
@@ -195,8 +194,9 @@ text-transform: none;
    
     position: absolute;
    text-align: center;
-        margin-left: 200px;
-  margin-right: 200px;
+        margin-left: 0px;
+  margin-right: 0px;
+       max-height: 500px;
     font-size: 40px;
     top: 500px;
     font-family: 'lovelyFont', Fallback, sans-serif;
@@ -218,7 +218,7 @@ text-transform: none;
     position: absolute;
     left: 0;
     right: 0;
-   top: 2000px;
+   top: 1500px;
     /* center all inline content */
     text-align: center;
     font-size: 100px;
@@ -232,8 +232,10 @@ color: white;
     
     
 .contactMeInfo{
-    position: absolute;
-    left:10%;
+    position: relative;
+   left: 0;
+    right: 0;
+    text-align: center;
     top:2300px;
     font-size: 40px;
       font-family: Georgia, serif;
@@ -247,9 +249,8 @@ color: white;
     
     .email  { 
             
-    position: absolute;
-     right:100%;
-    top:7px;
+   
+    top:0px;
     opacity: 1;
    
      
@@ -258,17 +259,15 @@ color: white;
          
         .phone { 
              
-     position: absolute;
-    right:100%;
     top:95px;
      opacity: 1;  
         }
        
     .location { 
         
-     position: absolute;
-    right:100%;
-    top:90px;
+     
+   
+    top:0px;
      opacity: 1;  
         }
          
@@ -278,7 +277,7 @@ color: white;
     width:50%;
     position: absolute;
     
- top:2300px;
+ top:1800px;
     
         }
 
@@ -457,20 +456,18 @@ rown on our farm here at the Stokely Creek Alpaca Ranch, and from other local gr
      
       
        <div class="contactMeInfo"> 
-        <div class="phone"><img src="JphoneLogo.png" style="height:60px;"></div>
-        <div class="email"><img class="email" src="JemailLogo.png" style="height:60px;"></div>
-        <div class="location" ><img class="location" src="location.png" style="height:60px;"></div>
-           <p>jjj@hotmail.ca
-               <br>
-                <br>
-           <p>(705)-992-5635
-               <br>
-                <br>
-           <p>149 Pickard Rd
-                <p>Goulais River,
-                <p>ON, Canada</p>
+           <div class="center">
+        <div class="phone"><img src="JphoneLogo.png" style="height:60px;"> <p>(705)-992-5635</p></div>
+        <div class="email"><img class="email" src="JemailLogo.png" style="height:60px;"><p>jjj@hotmail.ca </p></div>
+        <div class="location" ><img class="location" src="location.png" style="height:60px;"><p>149 Pickard Rd <p>Goulais River, ON, Canada</p></div>
+                                                                                                
+                        
+            </div>
+           
          
         </div>
+         
+          
         <div class="center">
        
         <form action="https://formspree.io/tanner_1@live.ca" method="post">

@@ -24,17 +24,23 @@ canvas {
        
  
         }
-   
+    .CAW{
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+        font-size: 50px;
+        position: absolute;
+            top:0px;
+       text-align: center;
+        right: 50%;
+
+    }
    
     #button{
         position: absolute;
-        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-        color:#2A7E8D;
-       height:100px;
-        width:100px;
-        background-color: #2A7E8D;
-        bottom:50%;
-        left:50%;
+        
+       height:100%;
+        width:100%;
+     top:100px;
+       
         }
    
      #reset{
@@ -74,13 +80,7 @@ canvas {
 }
    
     
-    .floor{
-        position: absolute;
-        bottom: 0%;
-        height: 30%;
-        width:100%;
-        left: 0%;
-    }
+    
     footer { 
     display: block;
     position: absolute;
@@ -120,9 +120,9 @@ var mySound;
 function startGame() {
     x = myGameArea.canvas.width;
     myGamePiece = new component(40, 50, "balloon.png", 25,75, "image");
-    myBackground = new component(500, 195, "firebackground.jpg", 0, 0, "image");
-    myObstacles.push(new component(99999, 70, "lava.png", 0, 200, "image"));
-     myObstacles.push(new component(500, 50, "fire.png", 10, 0, "image"));
+    myBackground = new component(500, 350, "firebackground.jpg", 0, 0, "image");
+    myObstacles.push(new component(500, 50, "fire.png", 0, 0, "image"));
+        myObstacles.push(new component(500, 50, "firefloor.png", 0, 250, "image"));
     myGamePiece.gravity = 0.005;
     myScore = new component("20px", "Copperplate", "white", 25, 25, "text");
       
@@ -131,7 +131,7 @@ function startGame() {
    
     myGameArea.start();
     
-   myMusic.play();
+   
            
    
 }
@@ -158,7 +158,7 @@ var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.height = 300;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -248,16 +248,16 @@ function updateGameArea() {
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
          
-            myMusic.stop();
-            
-            myGameArea.stop();
+            myMusic.sound.pause();
+          
+           
              
             
             return;
         } 
+         
     }
     
-     
     myGameArea.clear();
     myBackground.newPos();
     myBackground.update();
@@ -274,7 +274,8 @@ function updateGameArea() {
         maxGap = myGameArea.canvas.width;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
        
-        myObstacles.push(new component(200, height, "fire.png", x, 0, "image"));
+        myObstacles.push(new component(400, height, "fire.png", x, 0, "image"));
+        myObstacles.push(new component(400, 50, "firefloor.png", x, 250, "image"));
        
     }
    
@@ -284,6 +285,7 @@ function updateGameArea() {
     }
     myScore.text="SCORE: " + myGameArea.frameNo;
     myScore.update();
+   
     myGamePiece.newPos();
     myGamePiece.update();
 }
@@ -298,21 +300,7 @@ function everyinterval(n) {
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
-    function moveup() {
-    myGamePiece.speedY = -2;
-}
-
-function movedown() {
-    myGamePiece.speedY = n;
-}
-
-function moveleft() {
-    myGamePiece.speedX = -2;
-}
-
-function moveright() {
-    myGamePiece.speedX = 1;
-}
+   
     
     
 
@@ -326,10 +314,9 @@ function moveright() {
    
 
 
-<a    ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" ><img alt="Index" class= "button" id="button"  src="up.png"/></a> 
+<a    ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" class= "button" id="button"  ></a> 
 
-
-   <img class="floor" src="lava.png" >
+    <a class="CAW">Click Any Where</a>
     <footer>Music: https://www.bensound.com</footer>
 </body>
 </html>

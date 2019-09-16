@@ -79,7 +79,7 @@ canvas {
 
 </style>
 </head>
-<body onload="startGame()">
+<body onload="startGame();" >
 <script>
 
 var myGamePiece;
@@ -93,7 +93,6 @@ var mySound;
 function startGame() {
     x = myGameArea.canvas.width;
     myGamePiece = new component(40, 50, "balloon.png", 25,75, "image");
-    
     myObstacles.push(new component(500, 50, "fire.png", 0, 0, "image"));
         myObstacles.push(new component(500, 50, "firefloor.png", 0, 250, "image"));
     myGamePiece.gravity = 0.005;
@@ -101,7 +100,7 @@ function startGame() {
       
      mySound = new sound("pop.mp3");
  myMusic = new sound("music.mp3");
-    myMusic.play();
+   
     myGameArea.start();
      
    
@@ -227,7 +226,7 @@ function updateGameArea() {
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             
-            myGamePiece.image.src = "popped.png";
+           
             mySound.play();
             myMusic.stop();
              

@@ -93,8 +93,8 @@ var mySound;
 function startGame() {
     x = myGameArea.canvas.width;
     myGamePiece = new component(40, 60, "balloon.png", 25,75, "image");
-    myObstacles.push(new component(500, 50, "firefloor.png", 0, -50, "image"));
-    myObstacles.push(new component(500, 50, "firefloor.png", 0, 250, "image"));
+    myObstacles.push(new component(500, 50, "fire.png", 0, -50, "image"));
+    myObstacles.push(new component(500, 50, "fire.png", 0, 250, "image"));
     myGamePiece.gravity = 0.005;
     myScore = new component("20px", "Copperplate", "white", 25, 25, "text");
       
@@ -255,7 +255,7 @@ function updateGameArea() {
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
        
         myObstacles.push(new component(10, height, "black", x, 0));
-        myObstacles.push(new component(500, height, "firefloor.png", x, 250, "image"));
+        myObstacles.push(new component(500, height, "fire.png", x, 250, "image"));
        
     }
    

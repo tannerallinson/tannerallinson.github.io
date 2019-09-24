@@ -241,7 +241,7 @@ function updateGameArea() {
         maxGap = myGameArea.canvas.width;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
        
-        myObstacles.push(new component(10, height, "black", x, 0));
+        myObstacles.push(new component(20, height, "celling.png", x, 0, "image"));
         myObstacles.push(new component(450, height, "fire.png", x, 250, "image"));
        
     }

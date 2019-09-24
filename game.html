@@ -23,11 +23,11 @@ canvas {
     
    
     #button{
-        position: absolute;
-        
+       color: antiquewhite;
+position: fixed;
        height:100%;
         width:100%;
-     top:100px;
+     
        
         }
    
@@ -53,19 +53,6 @@ canvas {
            
 
              
-    .button {
-  border-radius: 50px;
-  text-align: center;
-  padding: 20px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-    .button:hover  {
-  opacity: 1;
-  right: .1;
-}
    
     
     
@@ -302,15 +289,15 @@ function accelerate(n) {
    
    
 </script>
-    <a  id= "home" href="index.html" width="60" height="60">Home Page</a>
-    <a id="reset" width="60" height="60" href="game.html"  >Restart</a>
    
    
 
 
 <a    ontouchend="accelerate(0.05)" ontouchstart="accelerate(-0.2)" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" class= "button" id="button"  ></a> 
 
-    
+     <a  id= "home" href="index.html" width="60" height="60">Home Page</a>
+    <a id="reset" width="60" height="60" href="game.html"  >Restart</a>
+   
     <footer>Music: https://www.bensound.com</footer>
 </body>
 </html>

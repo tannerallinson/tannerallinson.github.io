@@ -29,7 +29,7 @@ h1 {
     top:0px;
     left:0px;
     opacity: 0;
- 
+    z-index: -1;
     -webkit-animation: intro 4s;
     animation: intro 4s;
 }
@@ -37,17 +37,17 @@ h1 {
     @keyframes intro {
   0% {
    opacity: 1;
-       
+       z-index: 0;
   }
         80% {
              
      opacity: 1;
-             
+       z-index: 0;      
   }
  
   100% {
     opacity: 0;
-    
+    z-index: 0;
   }
 }
 
@@ -61,7 +61,7 @@ h1 {
  
   100% {
     opacity: 0;
-    
+    z-index: 0;
   }
 }
     
@@ -134,7 +134,7 @@ body {
 .dropdown-content {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   display: none;
-  position: absolute;
+ 
   background-color: #2A7E8D;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -532,9 +532,36 @@ article {
     font-size: 18px;
 } 
     
+    .LoRContainer {
+ position: absolute;
+   right:50%;
+   top:4150px;
+  
+  display: block;
+}
     
+      .LoR {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  
+    color:#C7E3E8;
+opacity:1;
     
-      
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+} 
+    .MiniLoR{
+        position: absolute;
+    top:-10px;
+        width:70%;
+        left:15%;
+         display: none;
+    }
+    .LoRContainer:hover .LoR {
+        opacity: 0;
+    }
+    .LoRContainer:hover .MiniLoR{
+        display: block;
+    }
     
 .ContactMePanel{
         
@@ -1063,12 +1090,14 @@ Volunteer Experience
 •   Event Planner, Ontario Students Against Impaired Driving    2011-2012
 •   Maintenance, Camp ABK                                       2011-2012
 •   Tech crew, Production section, Mustang Sally                2010-2011</pre>
+            
+
 </div>
     
     
         
         
-<div id="cover"></div>
+
         
         
      <div class="ProjectPanel" id="ProjectPanel"></div>
@@ -1086,9 +1115,14 @@ Volunteer Experience
          <h2 class="MomTitle" id="MomTitle">Mom's 55 Birthday</h2>
         
         
+        <div  class="LoRContainer">
+            <div class="Lor"><a href ="Letter_of_Recommendation.pdf"  class="LoR">Letter of Recommendation</a></div>
+            <div class="MiniLoR"><a class="MiniLoR" href ="Letter_of_Recommendation.pdf"><img class="MiniLoR" src="MiniLoR.JPG"> </a>
+            </div>
+       
+        </div>
         
-        
-        
+        <div id="cover"></div>
        <div class="contactMeInfo"> 
          <div class="phone"><img src="phoneLogo.png" style="height:50px;"></div>
     <div class="email"><img class="email" src="emailLogo.png" style="height:50px;"></div>

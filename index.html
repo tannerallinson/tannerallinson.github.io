@@ -14,7 +14,7 @@ h1 {
     transform: translate(-50%, -50%);
     font-size: 12px;
     color: white;
-    
+      z-index: 1;
     display: block;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     
@@ -22,7 +22,7 @@ h1 {
         
 
     #cover {
-   position: absolute;
+   
     background-color: #2A7E8D;
     height:5020px;
     width:100%;
@@ -37,12 +37,12 @@ h1 {
     @keyframes intro {
   0% {
    opacity: 1;
-       z-index: 0;
+       z-index: -1;
   }
         80% {
              
      opacity: 1;
-       z-index: 0;      
+       z-index:  -1;      
   }
  
   100% {
@@ -82,7 +82,7 @@ body {
     width:100%;
     top:0px;
     left:0px;
-   
+    z-index: 1;
     }
         
 
@@ -130,7 +130,7 @@ body {
  position: fixed;
   left: 90%;
   top: 0%;
-  
+   z-index: 1;
   display: block;
 }
 
@@ -175,7 +175,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
    opacity: 1;
-      
+       z-index: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
 }
@@ -194,6 +194,7 @@ body {
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+    
 }
 
 .icon-bar a:hover {
@@ -208,7 +209,7 @@ body {
     width:75px; 
     height:75px ;
     border-radius: 25px;
-    
+     z-index: 1;
 }
 
 .twitter {
@@ -217,6 +218,7 @@ body {
     width:75px; 
     height:75px ;
     border-radius: 25px;
+     z-index: 1;
 }
 
 
@@ -225,7 +227,7 @@ body {
   color: white;
       width:75px; 
     height:75px ;
-    border-radius: 25px;
+    border-radius: 25px; z-index: 1;
 }
 
 
@@ -284,7 +286,7 @@ body {
     
     
 article { 
-   
+    z-index: 1;
     position: absolute;
     left: 50%;
     top: 650px;
@@ -327,7 +329,7 @@ article {
     
     .JJLogo { 
     position: absolute;
-    
+     z-index: 1;
     top: 1380px;
     border-radius: 30px;
     height: 75px;
@@ -351,7 +353,7 @@ article {
     
     .AngLogo { 
     position: absolute;
-
+ z-index: 1;
     top: 1490px;
     border-radius: 30px;
     height: 75px;
@@ -375,7 +377,7 @@ article {
     
     .GameLogo { 
     position: absolute;
-
+ z-index: 1;
     top: 1590px;
     border-radius: 30px;
     height: 75px;
@@ -400,7 +402,7 @@ article {
     
    .RebeccaLogo { 
     position: absolute;
-  
+   z-index: 1;
     top: 1700px;
     border-radius: 30px;
     height: 120px;
@@ -431,6 +433,7 @@ article {
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
+         z-index: 1;
     }
     
      .MomTitle{ 
@@ -500,6 +503,8 @@ article {
     color: #DCEBF4;
     font-family:Consolas;
     display: block;
+        
+          z-index: 1;
     }
     
     
@@ -539,7 +544,7 @@ article {
  position: absolute;
    right:50%;
    top:4150px;
-  
+   z-index: 1;
   display: block;
 }
     
@@ -558,6 +563,7 @@ opacity:1;
         width:70%;
         left:15%;
          display: none;
+         
     }
     .LoRContainer:hover .LoR {
         opacity: 0;
@@ -639,7 +645,7 @@ opacity:1;
     position: absolute;
     right:50%;
  top:4470px;
-    
+     z-index: 1;
         }
 
        
@@ -717,9 +723,10 @@ input[type=submit]:hover {
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
+        
 }
 .css-typing p:nth-child(1) {
-
+ 
   width: 10.3em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);

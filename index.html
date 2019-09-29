@@ -135,6 +135,8 @@ body {
   top: 0%;
    z-index: 1;
   display: block;
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s; 
 }
 
 .dropdown-content {
@@ -144,7 +146,7 @@ body {
   background-color: #2A7E8D;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
+ 
 }
 
 .dropdown-content a {
@@ -173,7 +175,7 @@ body {
 
 .icon-bar {
   position: absolute;
-  top:4600px;
+  top:4900px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -181,6 +183,7 @@ body {
        z-index: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
+    
 }
    
     
@@ -193,11 +196,11 @@ body {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 65px;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-    
+    float: right
 }
 
 .icon-bar a:hover {
@@ -307,7 +310,7 @@ article {
     border-radius: 5px;
     position: absolute;
     top: 1200px;
-    height: 720px;
+    height: 750px;
     width:100%;
     display: block;
     -webkit-animation: introAnimation 4s;
@@ -332,7 +335,8 @@ article {
     
     .JJLogo { 
     position: absolute;
-     z-index: 1;
+    z-index: 1;
+    left: 25%;
     top: 1380px;
     border-radius: 30px;
     height: 75px;
@@ -344,7 +348,7 @@ article {
     
      .JJName{ 
     position: absolute;
-    left: 10%;
+    left: 40%;
     top: 1400px;
     color:#C7E3E8;
     font-size: 20px;
@@ -356,7 +360,8 @@ article {
     
     .AngLogo { 
     position: absolute;
- z-index: 1;
+    z-index: 1;
+    left: 25%;
     top: 1490px;
     border-radius: 30px;
     height: 75px;
@@ -368,7 +373,7 @@ article {
     
     .AngName{
     position: absolute;
-    left: 10%;
+    left: 40%;
     top: 1500px;
     color:#C7E3E8;
     font-size: 20px;
@@ -380,7 +385,8 @@ article {
     
     .GameLogo { 
     position: absolute;
- z-index: 1;
+    z-index: 1;
+    left: 25%;
     top: 1590px;
     border-radius: 30px;
     height: 75px;
@@ -392,7 +398,7 @@ article {
     
     .GameName{
     position: absolute;
-    left: 10%;
+    left: 40%;
     top: 1600px;
     color:#C7E3E8;
     font-size: 20px;
@@ -405,7 +411,8 @@ article {
     
    .RebeccaLogo { 
     position: absolute;
-   z-index: 1;
+    z-index: 1;
+    left: 25%;
     top: 1700px;
     border-radius: 30px;
     height: 120px;
@@ -417,7 +424,7 @@ article {
     
     .RebeccaTitle {
     position: absolute;
-    left: 10%;
+    left: 40%;
     top: 1705px;
     color:#C7E3E8;
     font-size: 20px;
@@ -427,9 +434,9 @@ article {
     animation: introAnimation 4s;
 }
     .MomLogo { 
- position: absolute;
-    left:60%;
-    top: 1400px;
+    position: absolute;
+    left:25%;
+    top: 1850px;
     border-radius: 30px;
     height: 75px;
     width:75px;
@@ -441,8 +448,8 @@ article {
     
      .MomTitle{ 
     position: absolute;
-    left: 70%;
-    top: 1400px;
+    left: 40%;
+    top: 1850px;
     color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -549,6 +556,8 @@ article {
    top:4150px;
    z-index: 1;
   display: block;
+         -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
 }
     
       .LoR {
@@ -575,6 +584,14 @@ opacity:1;
         display: block;
     }
     
+    
+   
+    .center{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
 .ContactMePanel{
         
     background-color: #C7E3E8;
@@ -596,7 +613,7 @@ opacity:1;
     color:#2A7E8D;
     font-size: 40px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    top:4280px;
+    top:4200px;
     opacity: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -605,8 +622,8 @@ opacity:1;
     
 .contactMeInfo{
     position: absolute;
-    left:50%;
-    top:4500px;
+    
+    top:4300px;
     font-size: 25px;
     color:#2A7E8D;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -646,7 +663,7 @@ opacity:1;
     animation: introAnimation 4s;   
     display: block;
     position: absolute;
-    right:50%;
+    width:50%;
  top:4470px;
      z-index: 1;
         }
@@ -1116,13 +1133,13 @@ Volunteer Experience
      <div class="ProjectPanel" id="ProjectPanel"></div>
         <h2 align="center" class="ProjectTitle" id="ProjectTitle">Projects</h2>
         <a  href="JJJ.html" ><img alt="Index" class="JJLogo"  src="carrot2.png"/></a>  
-         <h2 class="JJName" id="JJName">Jax and Joel's Produce ( In Construction )</h2>
+         <h2 class="JJName" id="JJName">Jax and Joel's Produce (In Construction)</h2>
         <a  href="GEW.html" ><img alt="Index" class="AngLogo"  src="earthBite%20(5).png"></a>  
-          <h2 class="AngName" id="AngName">Girl Eats World ( In Construction )</h2>
+          <h2 class="AngName" id="AngName">Girl Eats World (In Construction)</h2>
         <h2  class="GameName" id="game">Simple Game</h2>
         <a  href="game.html" ><img alt="Index" class="GameLogo" src="balloon.png"/></a>   
         <a  href="https://www.instagram.com/becs.beautyspot/" ><img alt="Index" class="RebeccaLogo"  src="Becc's%20Beauty%20Spot%20(3).png"/></a>  
-         <h2 class="RebeccaTitle" id="JJName">Bec's Beauty Spot ( I designed the logo )</h2>
+         <h2 class="RebeccaTitle" id="JJName">Bec's Beauty Spot (designedlogo)</h2>
         
         <a  href="intro.html" ><img alt="Index" class="MomLogo"  src="bday.gif"/></a>  
          <h2 class="MomTitle" id="MomTitle">Mom's 55 Birthday</h2>
@@ -1135,13 +1152,14 @@ Volunteer Experience
        
         </div>
         
-        
+    <div class="center">
        <div class="contactMeInfo"> 
          <div class="phone"><img src="phoneLogo.png" style="height:50px;"></div>
     <div class="email"><img class="email" src="emailLogo.png" style="height:50px;"></div>
-<pre>                tanner_1@live.ca
+           <pre>                tanner_1@live.ca
            
                 (705)-971-8559</pre>
+
         </div>
         
        
@@ -1168,7 +1186,7 @@ Volunteer Experience
             <a href="https://twitter.com/AllinsonTanner" ><img src="twitter.png" alt="Index" class="twitter"/></a>
             <a href="https://www.linkedin.com/in/tanner-allinson-810147188/" ><img src="linkedin.png" alt="Index" class="linkedin"/></a> 
         </div>
-
+</div>
         <article>
             <div class="css-typing">    
 
@@ -1208,8 +1226,8 @@ Volunteer Experience
         <input type="image" class="Nav" src="nav.png" />
          <div class="dropdown-content">
             <a href="#AboutMePanel">About Me</a>
-            <a href="#resumePanel">Resume</a>
             <a href="#ProjectPanel">Projects</a>
+            <a href="#resumePanel">Resume</a>
             <a href="#ContactMePanel">Contact Me</a>
             </div>
         </div>

@@ -75,7 +75,7 @@ body {
     background-color: #F1F9FA;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    
+    margin:0;
 }
     
 #top{
@@ -170,43 +170,33 @@ body {
     
     
     
-    
-        body {margin:0;height:1000px;}
+    @media only screen and (max-width: 600px) {
+       .icon-bar {
+           
+           left:50%;
+        }
+    }
 
 .icon-bar {
   position: absolute;
-  top:4900px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-   opacity: 1;
-       z-index: 1;
-    -webkit-animation: introAnimation 4s;
-    animation: introAnimation 4s;
-    
+  top:4800px;
+  opacity: 1;
+  z-index: 1;
+  -webkit-animation: introAnimation 4s;
+  animation: introAnimation 4s;
 }
-   
-    
-    
-    
-
-    
-    
-    
+  
 .icon-bar a {
   display: block;
   text-align: center;
   padding: 65px;
-  transition: all 0.3s ease;
   color: white;
   font-size: 20px;
-    float: right
+    float: left; 
 }
 
 .icon-bar a:hover {
-  
-    opacity: .5;
-      
+    opacity: .5; 
 }
 
 .facebook {
@@ -238,12 +228,7 @@ body {
 
 
 
-.content {
-  margin-left: 75px;
-  font-size: 30px;
-}
-    
-    
+
     
     
     
@@ -637,7 +622,7 @@ opacity:1;
     .email  { 
             
     position: absolute;
-    right:55%;
+   
     top:10%;
     opacity: 1;
     -webkit-animation: introAnimation 4s;
@@ -647,7 +632,7 @@ opacity:1;
          
         .phone { 
      position: absolute;
-    right:55%;
+   
     top:55%;
      opacity: 1;
     -webkit-animation: introAnimation 4s;
@@ -1155,10 +1140,11 @@ Volunteer Experience
     <div class="center">
        <div class="contactMeInfo"> 
          <div class="phone"><img src="phoneLogo.png" style="height:50px;"></div>
-    <div class="email"><img class="email" src="emailLogo.png" style="height:50px;"></div>
-           <pre>                tanner_1@live.ca
+           <pre>        tanner_1@live.ca</pre>
+        <div class="email"><img  src="emailLogo.png" style="height:50px;"></div>
+           <pre>        (705)-971-8559  </pre>
            
-                (705)-971-8559</pre>
+                
 
         </div>
         
@@ -1179,14 +1165,15 @@ Volunteer Experience
 </div>
     </form>
 
-        
+       
 
         <div class="icon-bar">
             <a href="https://www.facebook.com/tanner.allinson" ><img src="facebook.png" alt="Index" class="facebook"/></a>
             <a href="https://twitter.com/AllinsonTanner" ><img src="twitter.png" alt="Index" class="twitter"/></a>
             <a href="https://www.linkedin.com/in/tanner-allinson-810147188/" ><img src="linkedin.png" alt="Index" class="linkedin"/></a> 
+   
         </div>
-</div>
+        </div> 
         <article>
             <div class="css-typing">    
 

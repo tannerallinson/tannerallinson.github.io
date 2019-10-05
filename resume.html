@@ -27,7 +27,7 @@ h1 {
     #cover {
    
     background-color: #2A7E8D;
-    height:5020px;
+    height:5120px;
     width:100%;
     top:0px;
     left:0px;
@@ -179,7 +179,7 @@ body {
 
 .icon-bar {
   position: absolute;
-  top:4300px;
+  top:4400px;
   opacity: 1;
   z-index: 1;
   -webkit-animation: introAnimation 4s;
@@ -291,7 +291,7 @@ article {
     
     .ProjectPanel{
         
-    background-color: #C8DEE2   ;
+    background-color: #537D85  ;
     border-radius: 5px;
     position: absolute;
     top: 1200px;
@@ -310,7 +310,7 @@ article {
 	right: 0;
 	/* center all inline content */
 	text-align: center;
-    color:#537D85;
+    color:#C7E3E8;
     font-size: 50px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     opacity: 1;  
@@ -335,7 +335,7 @@ article {
     position: absolute;
     left: 40%;
     top: 1400px;
-    color:#537D85;
+    color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
      opacity: 1;  
@@ -360,7 +360,7 @@ article {
     position: absolute;
     left: 40%;
     top: 1500px;
-    color:#537D85;
+    color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     opacity: 1;  
@@ -385,7 +385,7 @@ article {
     position: absolute;
     left: 40%;
     top: 1600px;
-    color:#537D85;
+    color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     opacity: 1;  
@@ -411,7 +411,7 @@ article {
     position: absolute;
     left: 40%;
     top: 1705px;
-    color:#537D85;
+    color:#C7E3E8;
     font-size: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     opacity: 1;  
@@ -472,47 +472,66 @@ article {
     color: #DCEBF4;
     font-family:Consolas;
     display: block;
-        
+        max-width: 50%;
           z-index: 1;
     }
-    
-    
-    .resumePanel{
-    background-color: #D9F1F5 ;
-   
+    .backgroundResume{
     position: absolute;
-    top: 2920px;
-    height: 1300px;
+    top: 2750px;
+    height: 1550px;
     width:100%;
+        
     display: block;
     }
     
+   
+    .resumePanel{
+    background-color: #F8F5F5;
+    border-radius: 5px;
+    position: absolute;
+    top: 2920px;
+    height: 1200px;
+    width:700px;
+    
+        left:10px;
+    }
+    @media only screen and (max-width: 600px) {
+        .resumePanel{
+    background-color: #F8F5F5;
+    border-radius: 5px;
+    position: absolute;
+    top: 2920px;
+    height: 1200px;
+    width:90%;
+    display: block;
+    }
+    }
         
  .resume {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    position: absolute;
-    top:3520px;
-    color:#537D85;
-    height:800px;
-    left:50%;
-    transform: translate(-50%, -50%);
+    
+    top:150px;
+    color:black;
+   transform: translate(5%,0%);
+   position: absolute;
     font-size: 14px;
+    
 } 
     #resumeHeader {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     position: absolute;
-    top:3020px;
-    color:#537D85;
+    top:20px;
+    color:black;
     text-align: center;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     font-size: 18px;
 } 
     
     .LoRContainer {
  position: absolute;
    right:50%;
-   top:4150px;
+   top:4100px;
    z-index: 1;
   display: block;
          -webkit-animation: introAnimation 4s;
@@ -557,7 +576,7 @@ opacity:1;
     border-radius: 5px;
     position: absolute;
 
-    top: 4220px;
+    top: 4320px;
     height: 800px;
     width:100%;
     display: block;
@@ -572,7 +591,7 @@ opacity:1;
     color:#2A7E8D;
     font-size: 40px;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    top:4250px;
+    top:4350px;
     opacity: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -582,7 +601,7 @@ opacity:1;
 .contactMeInfo{
     position: absolute;
     
-    top:4850px;
+    top:4950px;
     font-size: 25px;
     color:#2A7E8D;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -623,7 +642,7 @@ opacity:1;
     display: block;
     position: absolute;
     width:50%;
- top:4470px;
+ top:4570px;
      z-index: 1;
         }
 
@@ -967,7 +986,7 @@ footer {
     display: block;
     position: absolute;
     left:auto;
-    top: 5000px;
+    top: 5100px;
     font-size: 15px;      
         }
     
@@ -1016,9 +1035,11 @@ footer {
 
 
         <div class="ContactMePanel" id="ContactMePanel"></div>
-        <h2 class="ContactMe">Contact me</h2>               
+        <h2 class="ContactMe">Contact me</h2>     
+        <img class ="backgroundResume"src="backgroundResume.jpg">
 
-        <div class="resumePanel" id="resumePanel"></div> 
+    
+        <div class="resumePanel" id="resumePanel">
         <div class="resumeHeader" id="resumeHeader">   
 <pre >
 Tanner Allinson
@@ -1029,10 +1050,12 @@ tanner_1@live.ca</pre>
        
         <div class="resume">
 <pre>Summary of Qualifications
-•   Computer programmer, trained in web development, object oriented programming, database
-    programming and low-level programming 
-•   Experience providing quality customer service in retail and contact centre environments
-•   Intelligent hardworking individual, who enjoys learning and who gets along well with others
+•   Computer programmer, trained in web development, object oriented 
+    programming, database programming and low-level programming 
+•   Experience providing quality customer service in retail and 
+    contact centre environments
+•   Intelligent hardworking individual, who enjoys learning and
+    who gets along well with others
 •   Work well in a team environment, as well as independently 
 •   Valid driver’s license with reliable vehicle
 
@@ -1054,14 +1077,19 @@ Languages
 Relevant Skills
 <br>
 University Programming Projects 
-•	OrthoApt-Designed database management system for orthodontist scheduling using Java and SQL
+•	OrthoApt-Designed database management system for 
+    orthodontist scheduling using Java and SQL
 •	TMessanger-Designed an online messaging system using Java 
-•	Personal Website-Created multiple personal websites using Java Script, CSS and HTML 5
-•	Resoft-Team member participating in designing an application for coordinating student housing 
-•	Association for Computing Machinery-Competed in international programming contest
+•	Personal Website-Created multiple personal websites 
+    using Java Script, CSS and HTML 5
+•	Resoft-Team member participating in designing an application 
+    for coordinating student housing 
+•	Association for Computing Machinery-Competed in 
+    international programming contest
 
 Customer Service
-•	Provided technical support for internet, cable and telephone customers
+•	Provided technical support for internet, 
+    cable and telephone customers
 •	Greeted customers in person and over the telephone
 •	Processed cash, debit and credit transactions
 •	Balanced cash at end of each shift
@@ -1083,7 +1111,9 @@ Volunteer Experience
 
 </div>
     
-    
+    </div> 
+      
+        
 
         
         
@@ -1183,8 +1213,9 @@ Volunteer Experience
         <div class="dropdown">
         <input type="image" class="Nav" src="nav.png" />
          <div class="dropdown-content">
-            <a href="#AboutMePanel">About Me</a>
+            
             <a href="#ProjectPanel">Projects</a>
+            <a href="#AboutMePanel">About Me</a>
             <a href="#resumePanel">Resume</a>
             <a href="#ContactMePanel">Contact Me</a>
             </div>

@@ -428,52 +428,50 @@ article {
     display: block;
     }
     
- @media (max-width: 480px) {
-  #resume {
-   position: absolute;
-      left:100px;
-  }
-}
-@media (min-width: 481px) {
-        
+
  #resume {
     position: absolute;
     top:3050px;
     display: block;
-} 
+     
 }
     #LetterOfRec {
     position: absolute;
     top:3050px;
-    
+
     display: none;
         
 } 
     
-.ResumeIcon {
+#ResumeIcon {
     position: absolute;
-   left:20px;
+   right:50%;
    top:1460px;
    z-index: 1;
     width:70px;
+    
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
 }
     
-    .LoRIcon {
+    #LoRIcon {
     position: absolute;
-    left:70px;
+   left:50%;
     top:1460px;
    z-index: 1;
     width:50px;
-          
+      
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;    
 }
    
     
-    .LoRIcon:hover{
+#LoRIcon:hover{
         opacity: .5;
     }
     
     
-    .ResumeIcon:hover{
+    #ResumeIcon:hover{
        opacity: .5;
     }
    
@@ -995,38 +993,41 @@ footer {
 function myFunctionRes() {
   document.getElementById("LetterOfRec").style.display = "none";
     document.getElementById("resume").style.display = "block";
-    document.getElementById("resumeHeader").style.display = "block";
+    document.getElementById("ResumeIcon").style.opacity = ".2";
+     document.getElementById("LoRIcon").style.opacity = "1";
 }
     function myFunctionLOR() {
     document.getElementById("LetterOfRec").style.display = "block";
     document.getElementById("resume").style.display = "none";
-    document.getElementById("resumeHeader").style.display = "none";
-        
+    document.getElementById("LoRIcon").style.opacity = ".2";
+    document.getElementById("ResumeIcon").style.opacity = "1";  
 }
 </script>
         
-        <div  class="ResumeIcon" onclick="myFunctionRes()">
-            <img class="ResumeIcon" src="resumeIcon.png">
-        </div>
-        
-        <div class="LoRIcon" onclick="myFunctionLOR()">
-            <img class="LoRIcon" src="recommendation-Icon.png"> 
-        </div>
         
         
         
         <div class="resumePanel" id="resumePanel"></div> 
         <div class="center">
+            
+            <div  id="ResumeIcon" onclick="myFunctionRes()">
+            <img id="ResumeIcon" src="resumeIcon.png">
+        </div>
+        
+        <div id="LoRIcon" onclick="myFunctionLOR()">
+            <img id="LoRIcon" src="recommendation-Icon.png"> 
+        </div>
+        
             <div id="LetterOfRec">
                 <img  src="Letter_of_Recommendation.jpg" style="width: 700px;" >
             </div>
         
         
-        <div id="resume" >
-            <img  src="resume.JPG" style="width: 700px;" >
-        </div>
+            <div id="resume" >
+                <img  src="resume.JPG" style="width: 700px;" >
+            </div>
     
-    </div>
+        </div>
 
         
         

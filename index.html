@@ -428,16 +428,13 @@ article {
     display: block;
     }
     
+    
         
- .resume {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+ #resume {
     position: absolute;
-    top:3520px;
-    color:#537D85;
-    height:800px;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
+    top:3050px;
+    right:200px;
+    display: block;
 } 
     #resumeHeader {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -450,42 +447,53 @@ article {
     font-size: 18px;
 } 
     
-    .LoRContainer {
+    #LetterOfRec {
+    position: absolute;
+    top:3050px;
+    right:200px;
+    display: none;
+        
+} 
+    
+    .ResumeIcon {
  position: absolute;
-   right:50%;
-   top:4150px;
+   left:20px;
+   top:1460px;
    z-index: 1;
-  display: block;
-         -webkit-animation: introAnimation 4s;
-    animation: introAnimation 4s;
+ 
+         width:70px;
 }
     
-      .LoR {
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  
-    color:#537D85;
-opacity:1;
-    
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-} 
-    .MiniLoR{
-        position: absolute;
-    top:-10px;
-        width:70%;
-        left:15%;
-         display: none;
-         
-    }
-    .LoRContainer:hover .LoR {
-        opacity: 0;
-    }
-    .LoRContainer:hover .MiniLoR{
-        display: block;
-    }
-    
-    
+      .LoRIcon {
+    position: absolute;
+   left:70px;
+   top:1460px;
+   z-index: 1;
+    width:50px;
+          
+}
    
+    
+    .LoRIcon:hover{
+        opacity: .5;
+    }
+    
+    
+    .ResumeIcon:hover{
+       opacity: .5;
+    }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     .center{
         display: block;
   margin-left: auto;
@@ -998,73 +1006,42 @@ footer {
 
         <div class="ContactMePanel" id="ContactMePanel"></div>
         <h2 class="ContactMe">Contact me</h2>               
-
-        <div class="resumePanel" id="resumePanel"></div> 
-        <div class="resumeHeader" id="resumeHeader">   
-<pre >
-Tanner Allinson
-Sault Ste. Marie, ON
-705-971-8559
-tanner_1@live.ca</pre>
+<script>
+function myFunctionRes() {
+  document.getElementById("LetterOfRec").style.display = "none";
+    document.getElementById("resume").style.display = "block";
+    document.getElementById("resumeHeader").style.display = "block";
+}
+    function myFunctionLOR() {
+    document.getElementById("LetterOfRec").style.display = "block";
+    document.getElementById("resume").style.display = "none";
+    document.getElementById("resumeHeader").style.display = "none";
+        
+}
+</script>
+        
+        <div  class="ResumeIcon" onclick="myFunctionRes()">
+            <img class="ResumeIcon" src="resumeIcon.png">
         </div>
-       
-        <div class="resume">
-<pre>Summary of Qualifications
-•   Computer programmer, trained in web development, object oriented programming, database
-    programming and low-level programming 
-•   Experience providing quality customer service in retail and contact centre environments
-•   Intelligent hardworking individual, who enjoys learning and who gets along well with others
-•   Work well in a team environment, as well as independently 
-•   Valid driver’s license with reliable vehicle
-
-Education 	 
-Algoma University 		Bachelor of Computer Science	June 2017 
-Sault Ste. Marie ON 
-
-Languages
-•   Java		
-•   C++
-•   HTML 5
-•   Java Script	
-•   CSS
-•   UNIX
-•   Assembly
-•   C
-•   SQL
-
-Relevant Skills
-<br>
-University Programming Projects 
-•	OrthoApt-Designed database management system for orthodontist scheduling using Java and SQL
-•	TMessanger-Designed an online messaging system using Java 
-•	Personal Website-Created multiple personal websites using Java Script, CSS and HTML 5
-•	Resoft-Team member participating in designing an application for coordinating student housing 
-•	Association for Computing Machinery-Competed in international programming contest
-
-Customer Service
-•	Provided technical support for internet, cable and telephone customers
-•	Greeted customers in person and over the telephone
-•	Processed cash, debit and credit transactions
-•	Balanced cash at end of each shift
-
-Employment Experience
-•   Letter Carrier/Clerk, Canada Post                           2017-Current
-•   Shipping and Receiving, Sears                               2017
-•   Tier two technical support for AT&T,                        2016     
-    Sutherland Global Services 	           		                                                  
-•   Cook, A&W                                                   2013-2016                  
-•   Sales Associate, HMV                                        2012-2013                    
-•   Maintenance Worker, Sault Ste. Marie KOA Campground         2012
+        
+        <div class="LoRIcon" onclick="myFunctionLOR()">
+            <img class="LoRIcon" src="recommendation-Icon.png"> 
+        </div>
+        
+        
+        
+        <div class="resumePanel" id="resumePanel"></div> 
+        <div class="center">
+            <div id="LetterOfRec">
+                <img  src="Letter_of_Recommendation.jpg" style="width: 900px;" >
+            </div>
+        
+        
+        <div id="resume" >
+            <img  src="resume.JPG" style="width: 900px;" >
+        </div>
     
-Volunteer Experience 					
-•   Event Planner, Ontario Students Against Impaired Driving    2011-2012
-•   Maintenance, Camp ABK                                       2011-2012
-•   Tech crew, Production section, Mustang Sally                2010-2011</pre>
-            
-
-</div>
-    
-    
+    </div>
 
         
         
@@ -1082,12 +1059,9 @@ Volunteer Experience
         
         
         
-        <div  class="LoRContainer">
-            <div class="Lor"><a href ="Letter_of_Recommendation.pdf"  class="LoR">Letter of Recommendation</a></div>
-            <div class="MiniLoR"><a class="MiniLoR" href ="Letter_of_Recommendation.pdf"><img class="MiniLoR" src="MiniLoR.JPG"> </a>
-            </div>
+        
        
-        </div>
+       
         
     <div class="center">
        <div class="contactMeInfo"> 

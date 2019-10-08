@@ -484,9 +484,41 @@ Slideimg {
     
     
     
+     .mapouter{
+            position:relative;
+            text-align:right;
+            height:500px;
+            width:600px;
+         
+        }
+        .gmap_canvas {
+            position: fixed;
+            bottom: 30px;
+            overflow:hidden;
+            background:none!important;
+            height:500px;
+            width:600px;
+            display: none;
+        }
     
+        .map_background{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: .7;
+            background-color:black;
+            display: none;
+
+        }
     
-    
+        .exit{
+            position: fixed;
+            top:50px;
+            right:50px;
+            width:25px;
+            display: none;
+        }
     
  
 </style>  
@@ -521,7 +553,7 @@ Grown on our farm here at the Stokely Creek Alpaca Ranch, and from other local g
 
   <div class="mySlides">
        <div class="Slideimg">
-           <img src="garlic.jpg" style="width:500px; height:500px;"></div>
+           <img src="harvest.jpg" style="width:500px; height:500px;"></div>
   </div>
 
   <div class="mySlides">
@@ -531,7 +563,7 @@ Grown on our farm here at the Stokely Creek Alpaca Ranch, and from other local g
     
   <div class="mySlides">
        <div class="Slideimg">
-           <img src="veggies.jpg" style="width:500px; height:500px;"></div>
+           <img src="duck.jpg" style="width:500px; height:500px;"></div>
   </div>
 
   <div class="mySlides">
@@ -550,13 +582,13 @@ Grown on our farm here at the Stokely Creek Alpaca Ranch, and from other local g
       <img class="demo cursor" src="barn.jpg" style="width:100px; height:100px;"  onclick="currentSlide(1)">
     </div>
     <div class="column">
-      <img class="demo cursor" src="garlic.jpg" style="width:100px; height:100px;" onclick="currentSlide(2)">
+      <img class="demo cursor" src="harvest.jpg" style="width:100px; height:100px;" onclick="currentSlide(2)">
     </div>
     <div class="column">
       <img class="demo cursor" src="leafs.jpg" style="width:100px; height:100px;" onclick="currentSlide(3)" >
     </div>
     <div class="column">
-      <img class="demo cursor" src="veggies.jpg" style="width:100px; height:100px;" onclick="currentSlide(4)" >
+      <img class="demo cursor" src="duck.jpg" style="width:100px; height:100px;" onclick="currentSlide(4)" >
     </div>
     <div class="column">
       <img class="demo cursor" src="lettuce.jpg" style="width:100px; height:100px;" onclick="currentSlide(5)" >
@@ -640,7 +672,7 @@ function showSlides(n) {
            <div class="center">
         <div class="phone"><img src="JphoneLogo.png" style="height:65px;"> <p>(705)-992-5635</p></div>
         <div class="email"><img class="email" src="JemailLogo.png" style="height:60px;"><p>jjj@hotmail.ca </p></div>
-        <div class="location" ><img class="location" src="location.png" style="height:60px;"><p>149 Pickard Rd <p>Goulais River, ON, Canada</p></div>
+        <div class="location" ><img class="location" src="location.png" style="height:60px;" onclick="myFunctionMap()"><p>149 Pickard Rd <p>Goulais River, ON, Canada</p></div>
                                                                                                 
                         
             </div>
@@ -650,7 +682,8 @@ function showSlides(n) {
          
           
         <div class="center">
-       
+               
+
         <!--<form action="https://formspree.io/tanner_1@live.ca" method="post">-->
 
             <form method="post">
@@ -668,6 +701,9 @@ function showSlides(n) {
 </div>
     </form>
         
+            
+            
+            
         </div>
         
         
@@ -696,6 +732,37 @@ function showSlides(n) {
 <div class="panel"></div>
     
     
+    <script>
+function myFunctionExit() {
+  document.getElementById("background").style.display = "none";
+    document.getElementById("canvas").style.display = "none";
+    document.getElementById("exit").style.display = "none";
+    
+}
+        
+        function myFunctionMap() {
+  document.getElementById("background").style.display = "block";
+    document.getElementById("canvas").style.display = "block";
+    document.getElementById("exit").style.display = "block";
+    
+}
+    
+</script>
+      <div class="map_background"  id="background"></div>
+     
+       <input type="image" class="exit" id="exit" src="exit.png" onclick="myFunctionExit()" />
+    <div class ="center">
+      
+        <div class="mapouter" id="map">
+            <div class="gmap_canvas" id="canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=149%20Pickard%20Rd%20Goulais%20River%2C%20ON%2C%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor review</a>
+            </div>
+        </div>
+    </div>
+    
+       
     
     
     <footer>Designed By: Tanner Allinson 2019</footer>

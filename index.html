@@ -7,18 +7,23 @@
 
 <!--CSS-->
 <style> 
-        
+       @font-face {
+	font-family: 'Santana';
+	src: url('Santana Script.ttf'); 
+	src: local('Santana Script'),local('Santana Script'),url('Santana Script.ttf') format('truetype');
+        }
+     
       
 h1 {
     position: fixed;
     left: 50%;
-    top: 40px;
+    top: 30px;
     transform: translate(-50%, -50%);
-    font-size: 12px;
+    
     color: white;
       z-index: 1;
     display: block;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+     font-family: 'Santana', Fallback, sans-serif;
     
 }
         
@@ -129,7 +134,7 @@ body {
 .dropdown {
  position: fixed;
   left: 90%;
-  top: 0%;
+  top: -1%;
    z-index: 1;
   display: block;
     -webkit-animation: introAnimation 4s;
@@ -137,12 +142,12 @@ body {
 }
 
 .dropdown-content {
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+   font-family: 'Santana', Fallback, sans-serif;
   display: none;
- 
+ font-size: 28px;
   background-color: #2A7E8D;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
  
 }
 
@@ -151,6 +156,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+    border: .1px solid #227482;
   
 }
 
@@ -229,14 +235,14 @@ article {
     
    .ProjectTitle {
     position: absolute;
-	top: 1250px;
+	top: 1200px;
 	left: 0;
 	right: 0;
 	/* center all inline content */
 	text-align: center;
     color:#537D85;
-    font-size: 50px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 60px;
+     font-family: 'Santana', Fallback, sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -260,8 +266,8 @@ article {
     left: 40%;
     top: 1400px;
     color:#537D85;
-    font-size: 20px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+     font-family: 'Santana', Fallback, sans-serif;
      opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;    
@@ -285,8 +291,8 @@ article {
     left: 40%;
     top: 1500px;
     color:#537D85;
-    font-size: 20px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+     font-family: 'Santana', Fallback, sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -310,8 +316,8 @@ article {
     left: 40%;
     top: 1600px;
     color:#537D85;
-    font-size: 20px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+     font-family: 'Santana', Fallback, sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -336,8 +342,8 @@ article {
     left: 40%;
     top: 1705px;
     color:#537D85;
-    font-size: 20px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+     font-family: 'Santana', Fallback, sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -357,24 +363,24 @@ article {
     
     .AboutMeTitle {
     position: absolute;
-	top: 1970px;
+	top: 1950px;
 	left: 0;
 	right: 0;
 	/* center all inline content */
 	text-align: center;
     color:#2A7E8D;
-    font-size: 50px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 60px;
+     font-family: 'Santana', Fallback, sans-serif;
     
 }
     
     
     .aboutMe { 
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+     font-family: 'Santana', Fallback, sans-serif;
     position: absolute;
     right:45%;
-    top: 2220px;
-    font-size: 16px;
+    top: 2150px;
+    font-size: 24px;
     color: #2A7E8D;
     width: 500px;
         
@@ -486,7 +492,7 @@ article {
   text-align: center;
   padding: 65px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
     float: left; 
 }
 
@@ -540,9 +546,9 @@ article {
     /* center all inline content */
     text-align: center;
     color:#2A7E8D;
-    font-size: 40px;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    top:4250px;
+    font-size: 60px;
+     font-family: 'Santana', Fallback, sans-serif;
+    top:4200px;
     opacity: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -554,7 +560,7 @@ article {
     top:4850px;
     font-size: 25px;
     color:#2A7E8D;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+     font-family: 'Santana', Fallback, sans-serif;
     opacity: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -605,7 +611,8 @@ article {
   padding: 12px 20px;
   background-color: #D8F2F7;
   color: #01505E;
-     font-family: Copperplate, "Copperplate Gothic Light", fantasy;   
+      font-family: 'Santana', Fallback, sans-serif;  
+            font-size: 28px;
 }
     input[type=text] {
   width: 100%;
@@ -615,7 +622,7 @@ article {
    border: 1px solid #ccc;
   background-color: #D8F2F7;
   color: #01505E;
-     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-family: 'Santana', Fallback, sans-serif;
     }
 
 input[type=submit] {
@@ -625,12 +632,14 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-family: 'Santana', Fallback, sans-serif;
+        font-size: 24px;
+
 }
 
 input[type=submit]:hover {
    background-color: #537D85;
-     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-family: 'Santana', Fallback, sans-serif;
 }
 
 .container {
@@ -642,17 +651,17 @@ input[type=submit]:hover {
     ::placeholder {
   color: #01505E;
   opacity: 1; /* Firefox */
-   font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    font-family: 'Santana', Fallback, sans-serif; 
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
  color: #01505E;
-     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-family: 'Santana', Fallback, sans-serif;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
  color: #01505E;
-     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-family: 'Santana', Fallback, sans-serif;
 }
     
     
@@ -847,13 +856,13 @@ input[type=submit]:hover {
     
     .header-typewriting p {
   border-right: .15em solid black;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-size: 50px;
+   font-family: 'Santana', Fallback, sans-serif;
+  font-size: 70px;
   white-space: nowrap;
   overflow: hidden;
 }
      .header-typewriting p:nth-child(1) {
-  width: 9.5em;
+  width: 4.5em;
   opacity: 0;
   -webkit-animation: type2 1s steps(40, end);
   animation: type2 1s steps(40, end);

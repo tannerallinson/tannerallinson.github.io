@@ -478,9 +478,8 @@ Slideimg {
         }
         .gmap_canvas {
             position: fixed;
-           top: 50px;
+            top: 0px;
             left: 0;
-            text-align:center;
             overflow:hidden;
             background:none!important;
             height:100%;
@@ -501,9 +500,9 @@ Slideimg {
     
         .exit{
             position: fixed;
-            top:50px;
-            right:50px;
-            width:25px;
+            top:10px;
+            right:10px;
+            width:50px;
             display: none;
         }
     
@@ -737,19 +736,19 @@ function myFunctionExit() {
 </script>
       <div class="map_background"  id="background"></div>
      
-       <input type="image" class="exit" id="exit" src="exit.png" onclick="myFunctionExit()" />
+
     <div class ="center">
       
         <div class="mapouter" id="map">
             <div class="gmap_canvas" id="canvas">
-                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=149%20Pickard%20Rd%20Goulais%20River%2C%20ON%2C%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=149%20Pickard%20Rd%20Goulais%20River%2C%20ON%2C%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                 </iframe>
                 
             </div>
         </div>
     </div>
     
-       
+              <input type="image" class="exit" id="exit" src="exit.png" onclick="myFunctionExit()" />
     
     
     <footer>Designed By: Tanner Allinson 2019</footer>

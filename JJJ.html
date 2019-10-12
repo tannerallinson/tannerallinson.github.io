@@ -5,24 +5,20 @@
         
       
 h1 {
-     
-    position: fixed;
-   
-    top:20px;
-left: 70px;
-      font-family: 'simple', Fallback, sans-serif;
-font-size: 40px;
-
-color: #9DDD97;
+    position: absolute;
+    top:5px;
+    left: 70px;
+    font-family: 'simple', Fallback, sans-serif;
+    font-size: 40px;
+    color: #9DDD97;
 
 }
         
 .top2{
-   
     background-color: black;
-    position: fixed;
+    position: absolute;
     left:0%;
-    top: 85px;
+    top: 155px;
     height: 45px;
     width:100%;
     }
@@ -48,7 +44,7 @@ color: #9DDD97;
 
     
     .box{
-        position:fixed;   
+        position:absolute;   
        
         top:85px;
         left:0px;
@@ -62,7 +58,7 @@ color: #9DDD97;
 .Nav {
     position: absolute;
     width:75px; 
-    top:0px;
+    top:70px;
     opacity: 1;
     border-radius: 50px;
     
@@ -136,11 +132,11 @@ text-transform: none;  display: none;
     
     
     .farmBackground{ 
-    background-image: url("sil.png");
+    background-image: url("sillhouette.png");
     position: absolute;
     left:0%;
     top: 0px;
-    height: 100px;
+    height: 180px;
     width:100%;
     background-repeat:repeat;
        
@@ -590,16 +586,20 @@ Grown on our farm here at the Stokely Creek Alpaca Ranch, and from other local g
   window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 155 || document.documentElement.scrollTop > 155) {
         document.getElementById("top2").style.top = "0px";
-        document.getElementById("h1").style.top = "-65px";
+        document.getElementById("h1").style.top = "-150px";
       document.getElementById("nav").style.top = "-85px";
        document.getElementById("dropdown").style.top = "45px";
+      document.getElementById("box").style.position = "fixed";
+       document.getElementById("top2").style.position = "fixed";
   } else {
-        document.getElementById("top2").style.top ="85px";
-        document.getElementById("h1").style.top = "20px";
-      document.getElementById("nav").style.top = "0px";
+        document.getElementById("top2").style.top ="155px";
+        document.getElementById("h1").style.top = "5px";
+      document.getElementById("nav").style.top = "70px";
        document.getElementById("dropdown").style.top = "130px";
+       document.getElementById("box").style.position = "absolute";
+       document.getElementById("top2").style.position = "absolute";
   }
 }
     
@@ -672,19 +672,19 @@ function showSlides(n) {
 
         <!--<form action="https://formspree.io/tanner_1@live.ca" method="post">-->
 
-            <form method="post">
-<div >
-    <input  type="text" id="first_name" name="name" placeholder="Your Name.."style="color:blue">
+     <form method="post">
+            <div >
+                <input  type="text" id="first_name" name="name" placeholder="Your Name.."style="color:blue">
 
-    <input  type="text" name="_replyto" id="email" placeholder="Your Email..">
-    
-      <center> 
-    <textarea id="comments" name="comments" placeholder="Write something.." style="height:150px"></textarea>
+                <input  type="text" name="_replyto" id="email" placeholder="Your Email..">
 
-    <input type="submit" value="Send">
-      </center>
- 
-</div>
+                  <center> 
+                <textarea id="comments" name="comments" placeholder="Write something.." style="height:150px"></textarea>
+
+                <input type="submit" value="Send">
+                  </center>
+
+            </div>
     </form>
         
             
@@ -700,7 +700,7 @@ function showSlides(n) {
         
         
         
-<div class="box">
+<div id ="box" class="box">
             <h1 id="h1" align="center"><p>Team Jax And Jones Produce</p></h1>
         
         <div class="dropdown" >

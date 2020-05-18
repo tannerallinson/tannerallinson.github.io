@@ -240,39 +240,33 @@ article {
 	/* center all inline content */
 	text-align: center;
     color:#537D85;
-    font-size: 60px;
+    font-size: 80px;
      font-family: 'Santana', Fallback, sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
 }
-    .JJLogoWIP{
-    position: absolute;
-    z-index: 1;
-    top: 1370px;
-    height: 75px;
-    width:75px;
-    opacity: 1;  
-    -webkit-animation: introAnimation 4s;
-    animation: introAnimation 4s;
-        right: 30%;
-    }
     
-    .JJLogo { 
+    
+    
+    .SLogo{ 
+        background-color: rgba(57, 0, 49, .9); 
+        border-radius: 5px;
     position: absolute;
+        left: 30%;
     z-index: 1;
-    top: 1310px;
+    top: -75px;
     height: 75px;
-    width:75px;
+    width:100px;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
     }
+    .SLogo:hover {opacity: .5;  }
     
-    
-     .JJName{ 
+     .SName{ 
     position: absolute;
-    top: 1370px;
+    top: 1480px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
@@ -281,13 +275,54 @@ article {
     animation: introAnimation 4s;    
     }
     
+    
+    
+    
+    .JJLogoWIP{
+    position: absolute;
+    z-index: 1;
+    top: 1640px;
+    height: 75px;
+    width:75px;
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
+        right: 5%;
+    }
+    
+    .JJLogo { 
+    position: absolute;
+    z-index: 1;
+    top: -75px;
+    height: 75px;
+    width:75px;
+    opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;
+        right: 30%;
+    }
+    .JJLogo:hover {opacity: .5;  }
+    
+    
+     .JJName{ 
+    position: absolute;
+    top: 1640px;
+    color:#537D85;
+    font-size: 30px;
+     font-family: sans-serif;
+     opacity: 1;  
+    -webkit-animation: introAnimation 4s;
+    animation: introAnimation 4s;   
+         right: 15%;
+    }
+    
     .ANGWIP{
        position: absolute;
     z-index: 1;
-    top: 1540px;
+    top: 1640px;
     height: 75px;
     width:75px;
-        right:30%;
+        left:30%;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s; 
@@ -296,59 +331,68 @@ article {
     .AngLogo { 
     position: absolute;
     z-index: 1;
-    top: 1480px;
+    top: -75px;
     height: 75px;
     width:75px;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
+        right: 30%;
     }
+    .AngLogo:hover {opacity: .5;  }
     
     .AngName{
     position: absolute;
-    top: 1540px;
+    top: 1640px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
+        left:10%;
     }
     
     .GameLogo { 
     position: absolute;
     z-index: 1;
-    top: 1650px;
+    top: -75px;
     height: 75px;
     width:75px;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
-    animation: introAnimation 4s;   
+    animation: introAnimation 4s;  
+       right: 30%;
+        
     }
+    .GameLogo:hover {opacity: .5;  }
     
     .GameName{
     position: absolute;
-    top: 1700px;
+    top: 1900px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
+        left:10%;
 }
     
     
    .RebeccaLogo { 
     position: absolute;
     z-index: 1;
-    top: 1800px;
+    top: -120px;
     border-radius: 30px;
     height: 120px;
     width:220px;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
-    animation: introAnimation 4s;   
+    animation: introAnimation 4s;  
+       right: 30%;
     }
+    .RebeccaLogo:hover {opacity: .5;  }
     
     .RebeccaTitle {
     position: absolute;
@@ -359,6 +403,7 @@ article {
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
+        right: 2%;
 }
     
     
@@ -423,19 +468,11 @@ article {
     width:100%;
     display: block;
     }
-     @media only screen and (max-width: 600px) {
-    #resume {
-    position: absolute;
-    top:1500px;
-    display: block;
-    width: 100%; 
-     
-}
-    }
+    
 
  #resume {
     position: absolute;
-    top:1500px;
+    top:50px;
     width:85%;
     left:7.5%;
     display: block;
@@ -443,16 +480,15 @@ article {
     #REC{
         position: absolute;
         position: absolute;
-        top:1500px;
+        top:50px;
         width:85%;
         left:7.5%;
         }
     #LetterOfRec {
         position: absolute;
-        top:1550px;
+        top:50px;
         display: none;
          position: absolute;
-        top:1500px;
         width:85%;
         left:7.5%;
     } 
@@ -460,7 +496,7 @@ article {
 #ResumeIcon {
     position: absolute;
    right:50%;
-   top:1460px;
+   top:0px;
    z-index: 1;
     width:70px;
     -webkit-animation: introAnimation 4s;
@@ -470,7 +506,7 @@ article {
     #LoRIcon {
     position: absolute;
    left:50%;
-    top:1460px;
+    top:0px;
    z-index: 1;
     width:50px;
     -webkit-animation: introAnimation 4s;
@@ -1057,7 +1093,7 @@ function myFunctionRes() {
         
         
         
-        <div class="resumePanel" id="resumePanel"></div> 
+        <div class="resumePanel" id="resumePanel">
         <div class="center">
             
             <div  id="ResumeIcon" onclick="myFunctionRes()">
@@ -1079,29 +1115,39 @@ function myFunctionRes() {
     
         </div>
 
-        
+        </div> 
         
      <div class="ProjectPanel" id="ProjectPanel"></div>
-        <div class="center">
+        
+        
+            
         <h2 align="center" class="ProjectTitle" id="ProjectTitle">Projects</h2>
-            <div class="JJBox"></div>
+            
+        <h1 class="SName" >Stephanie's Site
+       <center> <a href="https://stephaniebigg.github.io/" target="_blank"><img alt="Index" class="SLogo"  src="rose.png"/></a></center>
+         </h1>
+
+            
+           
       <img alt="Index" class="JJLogoWIP"  src="WorkInProgress.png"/> 
-        <a  href="JJJ.html" ><img alt="Index" class="JJLogo"  src="carrot2.png"/></a>  
-         <h2 class="JJName" id="JJName">Jax and Joel's Produce</h2>
+        <h2 class="JJName" id="JJName">Jax and Joel's Produce<a  href="JJJ.html" ><img alt="Index" class="JJLogo"  src="carrot2.png"/></a></h2>
             
             <img alt="Index" class="ANGWIP"  src="WorkInProgress.png"/> 
-        <a href="GEW.html" ><img alt="Index" class="AngLogo"  src="earthBite%20(5).png"></a>  
-          <h2 class="AngName" id="AngName">Girl Eats World</h2>
+        <h2 class="AngName" id="AngName">Girl Eats World
+        <a href="GEW.html" ><img alt="Index" class="AngLogo"  src="earthBite%20(5).png"></a> </h2>
     
-        <h2  class="GameName" id="game">Simple Game</h2>
+        <h2  class="GameName" id="game">Simple Game
         <a  href="game.html" ><img alt="Index" class="GameLogo" src="balloon.png"/></a> 
-            
+            </h2>
+        
+        <h2 class="RebeccaTitle" id="JJName">Bec's Beauty Spot (Designed logo)
         <a  href="https://www.instagram.com/becs.beautyspot/" target="_blank"><img alt="Index" class="RebeccaLogo"  src="Becc's%20Beauty%20Spot%20(3).png"/></a>  
-         <h2 class="RebeccaTitle" id="JJName">Bec's Beauty Spot (Designed logo)</h2>
+         </h2>
         
-          
-        
-    
+       
+     
+            <div class="center">
+            
        <div class="contactMeInfo"> 
          <div class="phone"><img src="phoneLogo.png" style="height:50px;"></div>
            <pre>        tanner_1@live.ca</pre>

@@ -234,7 +234,7 @@ article {
     
    .ProjectTitle {
     position: absolute;
-	top: 1200px;
+	top: 0px;
 	left: 0;
 	right: 0;
 	/* center all inline content */
@@ -247,7 +247,12 @@ article {
     animation: introAnimation 4s;
 }
     
-    
+    .Pbox{
+        position: absolute;
+        height: 1000px;
+        width:80%;
+        right:10%;
+    }
     
     .SLogo{ 
         background-color: rgba(57, 0, 49, .9); 
@@ -266,7 +271,7 @@ article {
     
      .SName{ 
     position: absolute;
-    top: 1480px;
+    top: 300px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
@@ -281,13 +286,13 @@ article {
     .JJLogoWIP{
     position: absolute;
     z-index: 1;
-    top: 1640px;
+    top: -15px;
     height: 75px;
     width:75px;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
-        right: 5%;
+        left: 350px;
     }
     
     .JJLogo { 
@@ -306,7 +311,7 @@ article {
     
      .JJName{ 
     position: absolute;
-    top: 1640px;
+    top: 450px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
@@ -319,10 +324,10 @@ article {
     .ANGWIP{
        position: absolute;
     z-index: 1;
-    top: 1640px;
+    top: -15px;
     height: 75px;
     width:75px;
-        left:30%;
+        left:240px;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s; 
@@ -343,7 +348,7 @@ article {
     
     .AngName{
     position: absolute;
-    top: 1640px;
+    top: 450px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
@@ -369,7 +374,7 @@ article {
     
     .GameName{
     position: absolute;
-    top: 1900px;
+    top: 700px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
@@ -396,14 +401,14 @@ article {
     
     .RebeccaTitle {
     position: absolute;
-    top: 1900px;
+    top: 700px;
     color:#537D85;
     font-size: 30px;
      font-family: sans-serif;
     opacity: 1;  
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
-        right: 2%;
+        right: 0%;
 }
     
     
@@ -1120,25 +1125,31 @@ function myFunctionRes() {
 
         </div> 
         
-     <div class="ProjectPanel" id="ProjectPanel"></div>
+     <div class="ProjectPanel" id="ProjectPanel">
         
         
             
         <h2 align="center" class="ProjectTitle" id="ProjectTitle">Projects</h2>
-            
+            <div class="Pbox">
         <h1 class="SName" >Stephanie's Site
        <center> <a href="https://stephaniebigg.github.io/" target="_blank"><img alt="Index" class="SLogo"  src="rose.png"/></a></center>
          </h1>
 
             
            
-      <img alt="Index" class="JJLogoWIP"  src="WorkInProgress.png"/> 
-        <h2 class="JJName" id="JJName">Jax and Joel's Produce<a  href="JJJ.html" ><img alt="Index" class="JJLogo"  src="carrot2.png"/></a></h2>
+     
+        <h2 class="JJName" id="JJName">Jax and Joel's Produce<a  href="JJJ.html" >
+            <img alt="Index" class="JJLogo"  src="carrot2.png"/></a>
+        <img alt="Index" class="JJLogoWIP"  src="WorkInProgress.png"/> 
+         </h2>
             
-            <img alt="Index" class="ANGWIP"  src="WorkInProgress.png"/> 
+            
+                
         <h2 class="AngName" id="AngName">Girl Eats World
-        <a href="GEW.html" ><img alt="Index" class="AngLogo"  src="earthBite%20(5).png"></a> </h2>
-    
+        <a href="GEW.html" ><img alt="Index" class="AngLogo"  src="earthBite%20(5).png"></a>
+         <img alt="Index" class="ANGWIP"  src="WorkInProgress.png"/> </h2>
+            
+                
         <h2  class="GameName" id="game">Simple Game
         <a  href="game.html" ><img alt="Index" class="GameLogo" src="balloon.png"/></a> 
             </h2>
@@ -1146,8 +1157,8 @@ function myFunctionRes() {
         <h2 class="RebeccaTitle" id="JJName">Bec's Beauty Spot (Designed logo)
         <a  href="https://www.instagram.com/becs.beautyspot/" target="_blank"><img alt="Index" class="RebeccaLogo"  src="Becc's%20Beauty%20Spot%20(3).png"/></a>  
          </h2>
-        
-       
+        </div>
+       </div>
      
             <div class="center">
             

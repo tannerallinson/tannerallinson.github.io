@@ -260,13 +260,12 @@ article {
         border-radius: 5px;
     position: absolute;
         left: 30%;
-    z-index: 1;
+    z-index: 0;
     top: -75px;
     height: 75px;
     width:100px;
-    opacity: 1;  
-    -webkit-animation: introAnimation 4s;
-    animation: introAnimation 4s;
+    
+    
     }
     .SLogo:hover {opacity: .5;  }
     
@@ -501,14 +500,14 @@ article {
         top:50px;
         width:85%;
         left:7.5%;
-        max-height: 1200px;
+        height: 1400px;
         }
     #REC2{
         position: absolute;
         top:1400px;
         width:85%;
         left:7.5%;
-        max-height: 1200px;
+        height: 500px;
         }
     #LetterOfRec {
         position: absolute;
@@ -1136,6 +1135,7 @@ function myFunctionRes() {
     document.getElementById("Exit").style.opacity = "1";
     document.getElementById("footer").style.color = "white";
     document.getElementById("footer").style.zIndex = "2";
+    
 }
     function myFunctionLOR() {
     
@@ -1153,6 +1153,7 @@ function myFunctionRes() {
     document.getElementById("Exit").style.opacity = "1";
     document.getElementById("footer").style.color = "white";
     document.getElementById("footer").style.zIndex = "2";
+    
 }
     
     function myFunctionExit() {
@@ -1166,37 +1167,6 @@ function myFunctionRes() {
 </script>
         
         
-        
-        
-        <div class="resumePanel" id="resumePanel">
-        <div class="center">
-            
-            <div  id="ResumeIcon" onclick="myFunctionRes()">
-            <div id="RTitle">Resume</div>
-            <img id="ResumeIcon" src="resumeIcon.png">
-        </div>
-        
-        <div id="LoRIcon" onclick="myFunctionLOR()">
-            <div id="LoRTitle">Recomondation</div>
-            <img id="LoRIcon" src="recommendation-Icon.png"> 
-        </div>
-        
-            <div id="LetterOfRec" >
-                <img id="REC" src="Letter_of_Recommendation.jpg" >
-            </div>
-        
-        
-            <div id="resume" >
-                <img id="REC" src="resume1.jpg">
-                <img id="REC2" src="resume2.jpg">
-            </div>
-            
-            
-    
-            
-        </div>
-
-        </div> 
         
      <div class="ProjectPanel" id="ProjectPanel">
         
@@ -1297,6 +1267,45 @@ function myFunctionRes() {
         </article>
 
         
+        
+        
+        
+        
+        
+        
+        
+        <div class="resumePanel" id="resumePanel">
+        <div class="center">
+            
+            <div  id="ResumeIcon" onclick="myFunctionRes()">
+            <div id="RTitle">Resume</div>
+            <img id="ResumeIcon" src="resumeIcon.png">
+        </div>
+        
+        <div id="LoRIcon" onclick="myFunctionLOR()">
+            <div id="LoRTitle">Recomondation</div>
+            <img id="LoRIcon" src="recommendation-Icon.png"> 
+        </div>
+        
+            <div id="LetterOfRec" >
+                <img id="REC" src="Letter_of_Recommendation.jpg" >
+            </div>
+        
+        
+            <div id="resume" >
+                <img id="REC" src="resume1.jpg">
+                <img id="REC2" src="resume2.jpg">
+            </div>
+            
+            
+    
+            
+        </div>
+
+        </div> 
+        
+        
+        
         <div id="top"></div>
 
 
@@ -1322,7 +1331,7 @@ function myFunctionRes() {
         </div>
     
     
-    <footer id="footer">Designed By: Tanner Allinson 2019</footer>
+    <footer id="footer">Designed By: Tanner Allinson 2020</footer>
     <div id="cover"></div>
 </html>
 

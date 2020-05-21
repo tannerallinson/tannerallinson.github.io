@@ -19,9 +19,8 @@ h1 {
     left: 50%;
     top: 30px;
     transform: translate(-50%, -50%);
-    
+    z-index: 2;
     color: white;
-      z-index: 1;
     display: block;
      font-family: 'Santana', Fallback, sans-serif;
     
@@ -30,7 +29,7 @@ h1 {
 
     #cover {
     background-color: #2A7E8D;
-    height:4000px;
+    height:4020px;
     width:100%;
     top:0px;
     left:0px;
@@ -88,7 +87,7 @@ body {
     width:100%;
     top:0px;
     left:0px;
-    z-index: 1;
+    z-index: 2;
     }
         
 
@@ -137,6 +136,7 @@ body {
   display: block;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s; 
+    z-index: 2;
 }
 
 .dropdown-content {
@@ -187,7 +187,7 @@ body {
     border-radius: 5px;
     position: absolute;
     left: 50%;
-    top: 650px;
+    top: 750px;
     transform: translate(-50%, -50%);
     height: 920px;
     width:820px;
@@ -198,7 +198,7 @@ body {
     background-color: black;
     position: absolute;
     left: 50%;
-    top: 650px;
+    top: 750px;
     transform: translate(-50%, -50%);
     height: 865px;
     width:800px;;
@@ -210,7 +210,7 @@ article {
     z-index: 1;
     position: absolute;
     left: 45%;
-    top: 650px;
+    top: 750px;
     transform: translate(-50%, -50%);
     color: white;
     display: block;
@@ -470,7 +470,7 @@ article {
     background-color: black ;
     position: absolute;
     top: 0px;
-    height: 4000px;
+    height: 4020px;
     width:100%;
     visibility:hidden;
         z-index: 1;
@@ -479,24 +479,13 @@ article {
     .resumePanel{
     
     position: absolute;
-    top: 100px;
+    top: 150px;
     height: 100px;
     width:100%;
     display: block;
         z-index: 2;
     }
     
-@media (max-width: 500px) { 
-    #resume {
-    position: absolute;
-    top:50px;
-    width:85%;
-    left:7.5%;
-     
-      height: 1300px;
-    display: block;
-}
-    }
  #resume {
     position: absolute;
     top:50px;
@@ -506,9 +495,17 @@ article {
       max-height: 1200px;
     display: none;
 }
+    
     #REC{
         position: absolute;
         top:50px;
+        width:85%;
+        left:7.5%;
+        max-height: 1200px;
+        }
+    #REC2{
+        position: absolute;
+        top:1400px;
         width:85%;
         left:7.5%;
         max-height: 1200px;
@@ -521,12 +518,29 @@ article {
         left:7.5%;
         max-height: 1200px;
     } 
+    #RTitle{ 
+    position: absolute;
+    color:#537D85;
+        right: 40px;
+    top:-20px;
+    font-size: 15px;
+    font-family: sans-serif;
+        
+    }
+    #LoRTitle{
+        position: absolute;
+    color:#537D85;
+    font-size: 15px;
+         top:-20px;
+    font-family: sans-serif;
+    }
+    
     
 #ResumeIcon {
     position: absolute;
    right:50%;
    top:0px;
-   z-index: 1;
+   z-index: 0;
     width:70px;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -536,7 +550,7 @@ article {
     position: absolute;
    left:50%;
     top:0px;
-   z-index: 1;
+   z-index: 0;
     width:50px;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;    
@@ -954,6 +968,7 @@ input[type=submit]:hover {
     
     
     .header-typewriting p {
+        
   border-right: .15em solid black;
    font-family: 'Santana', Fallback, sans-serif;
   font-size: 70px;
@@ -1045,12 +1060,13 @@ input[type=submit]:hover {
    
 }
         
-footer { 
+#footer { 
     display: block;
     position: absolute;
     left:auto;
     top: 4000px;
-    font-size: 15px;      
+    font-size: 15px; 
+    color:black;
         }
     
  
@@ -1105,41 +1121,47 @@ footer {
         <h2 class="ContactMe">Contact me</h2>               
 <script>
 function myFunctionRes() {
-  document.getElementById("LetterOfRec").style.display = "none";
+    
     document.getElementById("resume").style.display = "block";
-    document.getElementById("ResumeIcon").style.opacity = ".2";
-     document.getElementById("LoRIcon").style.opacity = "1";
+    document.getElementById("resume").style.zIndex = "2";
+    document.getElementById("ResumeIcon").style.opacity = ".5";
+    document.getElementById("ResumeIcon").style.zIndex = "2";
+    document.getElementById("LoRIcon").style.zIndex = "2";
+    document.getElementById("LoRIcon").style.opacity = "1";
     document.getElementById("resumeBackground").style.visibility = "visible";
     document.getElementById("LetterOfRec").style.zIndex = "2";
-    document.getElementById("resume").style.zIndex = "2";
-    document.getElementById("ResumeIcon").style.zIndex = "2";
-     document.getElementById("LoRIcon").style.zIndex = "2";
+    document.getElementById("LetterOfRec").style.display = "none";
     document.getElementById("Exit").style.zIndex = "2";
     document.getElementById("Exit").style.visibility = "visible";
-     document.getElementById("Exit").style.opacity = "1";
+    document.getElementById("Exit").style.opacity = "1";
+    document.getElementById("footer").style.color = "white";
+    document.getElementById("footer").style.zIndex = "2";
 }
     function myFunctionLOR() {
-    document.getElementById("LetterOfRec").style.display = "block";
-    document.getElementById("resume").style.display = "none";
-    document.getElementById("LoRIcon").style.opacity = ".2";
-    document.getElementById("ResumeIcon").style.opacity = "1";  
-        document.getElementById("resumeBackground").style.visibility = "visible";
+    
+    document.getElementById("LoRIcon").style.zIndex = "2"; 
+    document.getElementById("LoRIcon").style.opacity = ".5";
+    document.getElementById("resumeBackground").style.visibility = "visible";
     document.getElementById("LetterOfRec").style.zIndex = "2";
+    document.getElementById("LetterOfRec").style.display = "block";
     document.getElementById("resume").style.zIndex = "2";
+    document.getElementById("resume").style.display = "none";
     document.getElementById("ResumeIcon").style.zIndex = "2";
-     document.getElementById("LoRIcon").style.zIndex = "2"; 
-        document.getElementById("Exit").style.zIndex = "2";
-         document.getElementById("Exit").style.visibility = "visible";
-         document.getElementById("Exit").style.opacity = "1";
+    document.getElementById("ResumeIcon").style.opacity = "1"; 
+    document.getElementById("Exit").style.zIndex = "2";
+    document.getElementById("Exit").style.visibility = "visible";
+    document.getElementById("Exit").style.opacity = "1";
+    document.getElementById("footer").style.color = "white";
+    document.getElementById("footer").style.zIndex = "2";
 }
     
     function myFunctionExit() {
     document.getElementById("LetterOfRec").style.display = "none";
     document.getElementById("resume").style.display = "none"; 
-        document.getElementById("LoRIcon").style.opacity = "1";
+    document.getElementById("LoRIcon").style.opacity = "1";
     document.getElementById("ResumeIcon").style.opacity = "1"; 
-        document.getElementById("resumeBackground").style.visibility = "hidden";
-         document.getElementById("Exit").style.visibility = "hidden";
+    document.getElementById("resumeBackground").style.visibility = "hidden";
+    document.getElementById("Exit").style.visibility = "hidden";
     }
 </script>
         
@@ -1150,10 +1172,12 @@ function myFunctionRes() {
         <div class="center">
             
             <div  id="ResumeIcon" onclick="myFunctionRes()">
+            <div id="RTitle">Resume</div>
             <img id="ResumeIcon" src="resumeIcon.png">
         </div>
         
         <div id="LoRIcon" onclick="myFunctionLOR()">
+            <div id="LoRTitle">Recomondation</div>
             <img id="LoRIcon" src="recommendation-Icon.png"> 
         </div>
         
@@ -1163,8 +1187,11 @@ function myFunctionRes() {
         
         
             <div id="resume" >
-                <img id="REC" src="resume.JPG">
+                <img id="REC" src="resume1.jpg">
+                <img id="REC2" src="resume2.jpg">
             </div>
+            
+            
     
             
         </div>
@@ -1278,7 +1305,6 @@ function myFunctionRes() {
          <div class="dropdown-content">
             <a href="#AboutMePanel">About Me</a>
             <a href="#ProjectPanel">Projects</a>
-            <a href="#resumePanel">Resume</a>
             <a href="#ContactMePanel">Contact Me</a>
             </div>
         </div>
@@ -1296,7 +1322,7 @@ function myFunctionRes() {
         </div>
     
     
-    <footer>Designed By: Tanner Allinson 2019</footer>
+    <footer id="footer">Designed By: Tanner Allinson 2019</footer>
     <div id="cover"></div>
 </html>
 

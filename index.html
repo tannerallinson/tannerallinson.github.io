@@ -30,7 +30,7 @@ h1 {
 
     #cover {
     background-color: #2A7E8D;
-    height:5020px;
+    height:4000px;
     width:100%;
     top:0px;
     left:0px;
@@ -418,7 +418,7 @@ article {
     border-radius: 5px;
     position: absolute;
     top: 1970px;
-    height: 1000px;
+    height: 1400px;
     width:100%;
     display: block;
     }
@@ -456,14 +456,34 @@ article {
     z-index: 1;
     }
     
+    #Exit{
+        position: absolute;
+       top: 50px;
+        right:50px;
+        height: 50px;
+        width: 50px;
+        z-index: -1;
+       
+        
+    }
+    #resumeBackground{
+    background-color: black ;
+    position: absolute;
+    top: 0px;
+    height: 4000px;
+    width:100%;
+    visibility:hidden;
+        z-index: 1;
+    }
     
     .resumePanel{
-    background-color: #EDFCFF ;
+    
     position: absolute;
-    top: 2920px;
-    height: 1300px;
+    top: 100px;
+    height: 100px;
     width:100%;
     display: block;
+        z-index: 2;
     }
     
 @media (max-width: 500px) { 
@@ -484,10 +504,9 @@ article {
     left:7.5%;
      min-height: 900px;
       max-height: 1200px;
-    display: block;
+    display: none;
 }
     #REC{
-        position: absolute;
         position: absolute;
         top:50px;
         width:85%;
@@ -498,7 +517,6 @@ article {
         position: absolute;
         top:50px;
         display: none;
-         position: absolute;
         width:85%;
         left:7.5%;
         max-height: 1200px;
@@ -561,7 +579,7 @@ article {
 
 .icon-bar {
   position: absolute;
-  top:4300px;
+  top:3300px;
   opacity: 1;
   z-index: 1;
   -webkit-animation: introAnimation 4s;
@@ -614,7 +632,7 @@ article {
     background-color: #C7E3E8;
     border-radius: 5px;
     position: absolute;
-    top: 4220px;
+    top: 3220px;
     height: 800px;
     width:100%;
     display: block;
@@ -629,7 +647,7 @@ article {
     color:#2A7E8D;
     font-size: 60px;
      font-family: 'Santana', Fallback, sans-serif;
-    top:4200px;
+    top:3200px;
     opacity: 1;
     -webkit-animation: introAnimation 4s;
     animation: introAnimation 4s;
@@ -638,7 +656,7 @@ article {
     
 .contactMeInfo{
     position: absolute;
-    top:4850px;
+    top:3850px;
     font-size: 25px;
     color:#2A7E8D;
      font-family: 'Santana', Fallback, sans-serif;
@@ -676,7 +694,7 @@ article {
     display: block;
     position: absolute;
     width:50%;
- top:4470px;
+ top:3470px;
      z-index: 1;
         }
 
@@ -1004,7 +1022,7 @@ input[type=submit]:hover {
 
 .img img {
     width: 100%;
-   height: 550px;
+   height: 700px;
     background-color: lightblue;
     border-radius: 50px;
 }
@@ -1031,7 +1049,7 @@ footer {
     display: block;
     position: absolute;
     left:auto;
-    top: 5000px;
+    top: 4000px;
     font-size: 15px;      
         }
     
@@ -1091,13 +1109,38 @@ function myFunctionRes() {
     document.getElementById("resume").style.display = "block";
     document.getElementById("ResumeIcon").style.opacity = ".2";
      document.getElementById("LoRIcon").style.opacity = "1";
+    document.getElementById("resumeBackground").style.visibility = "visible";
+    document.getElementById("LetterOfRec").style.zIndex = "2";
+    document.getElementById("resume").style.zIndex = "2";
+    document.getElementById("ResumeIcon").style.zIndex = "2";
+     document.getElementById("LoRIcon").style.zIndex = "2";
+    document.getElementById("Exit").style.zIndex = "2";
+    document.getElementById("Exit").style.visibility = "visible";
+     document.getElementById("Exit").style.opacity = "1";
 }
     function myFunctionLOR() {
     document.getElementById("LetterOfRec").style.display = "block";
     document.getElementById("resume").style.display = "none";
     document.getElementById("LoRIcon").style.opacity = ".2";
     document.getElementById("ResumeIcon").style.opacity = "1";  
+        document.getElementById("resumeBackground").style.visibility = "visible";
+    document.getElementById("LetterOfRec").style.zIndex = "2";
+    document.getElementById("resume").style.zIndex = "2";
+    document.getElementById("ResumeIcon").style.zIndex = "2";
+     document.getElementById("LoRIcon").style.zIndex = "2"; 
+        document.getElementById("Exit").style.zIndex = "2";
+         document.getElementById("Exit").style.visibility = "visible";
+         document.getElementById("Exit").style.opacity = "1";
 }
+    
+    function myFunctionExit() {
+    document.getElementById("LetterOfRec").style.display = "none";
+    document.getElementById("resume").style.display = "none"; 
+        document.getElementById("LoRIcon").style.opacity = "1";
+    document.getElementById("ResumeIcon").style.opacity = "1"; 
+        document.getElementById("resumeBackground").style.visibility = "hidden";
+         document.getElementById("Exit").style.visibility = "hidden";
+    }
 </script>
         
         
@@ -1120,9 +1163,10 @@ function myFunctionRes() {
         
         
             <div id="resume" >
-                <img id="resume" src="resume.JPG">
+                <img id="REC" src="resume.JPG">
             </div>
     
+            
         </div>
 
         </div> 
@@ -1225,7 +1269,7 @@ function myFunctionRes() {
         </div>
         </article>
 
-
+        
         <div id="top"></div>
 
 
@@ -1246,7 +1290,10 @@ function myFunctionRes() {
 
 
     </body>
-    
+    <div id="resumeBackground"></div>
+<div  id="Exit" onclick="myFunctionExit()">
+            <img id="Exit" src="exit.png">
+        </div>
     
     
     <footer>Designed By: Tanner Allinson 2019</footer>
